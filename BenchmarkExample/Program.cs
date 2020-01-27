@@ -7,7 +7,7 @@ namespace BenchmarkExample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Start");
+            Console.WriteLine("Start Benchmarks");
             BenchmarkRunner.Run<DateParserBenchmarks>();
             Console.ReadKey(); ;
         }
