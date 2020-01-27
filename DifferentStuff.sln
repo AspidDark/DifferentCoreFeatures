@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkExample", "Benchma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRApp", "SignalRApp\SignalRApp.csproj", "{5F3C5283-183B-41CD-A111-9CE697B9FAB0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFirst", "AzureFirst\AzureFirst.csproj", "{1E5A7809-E835-46C3-A4D3-B622ABD54475}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5F3C5283-183B-41CD-A111-9CE697B9FAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F3C5283-183B-41CD-A111-9CE697B9FAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F3C5283-183B-41CD-A111-9CE697B9FAB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E5A7809-E835-46C3-A4D3-B622ABD54475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E5A7809-E835-46C3-A4D3-B622ABD54475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E5A7809-E835-46C3-A4D3-B622ABD54475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E5A7809-E835-46C3-A4D3-B622ABD54475}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
