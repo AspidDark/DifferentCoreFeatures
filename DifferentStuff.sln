@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReciveMessage", "Rabbit\Rec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendMessage", "Rabbit\SendMessage\SendMessage.csproj", "{5B0FC51D-D35C-426E-BC04-32439FBDB68F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqLib", "LinqLib\LinqLib.csproj", "{BDAD5D90-BBDE-4148-9290-84B832617D96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{5B0FC51D-D35C-426E-BC04-32439FBDB68F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B0FC51D-D35C-426E-BC04-32439FBDB68F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B0FC51D-D35C-426E-BC04-32439FBDB68F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDAD5D90-BBDE-4148-9290-84B832617D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDAD5D90-BBDE-4148-9290-84B832617D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDAD5D90-BBDE-4148-9290-84B832617D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDAD5D90-BBDE-4148-9290-84B832617D96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
