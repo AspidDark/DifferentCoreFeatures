@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkExample", "BenchmarkExample\BenchmarkExample.csproj", "{EF15C279-7A0F-43ED-B360-A73BAF85C74D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchmarkExample", "BenchmarkExample\BenchmarkExample.csproj", "{EF15C279-7A0F-43ED-B360-A73BAF85C74D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRApp", "SignalRApp\SignalRApp.csproj", "{5F3C5283-183B-41CD-A111-9CE697B9FAB0}"
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendMessage", "Rabbit\SendMessage\SendMessage.csproj", "{5B0FC51D-D35C-426E-BC04-32439FBDB68F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqLib", "LinqLib\LinqLib.csproj", "{BDAD5D90-BBDE-4148-9290-84B832617D96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeatureFlagExample", "FeatureFlagExample\FeatureFlagExample.csproj", "{8C374DC3-ED19-4CE5-AB4E-7C0586AEECE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{BDAD5D90-BBDE-4148-9290-84B832617D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDAD5D90-BBDE-4148-9290-84B832617D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDAD5D90-BBDE-4148-9290-84B832617D96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C374DC3-ED19-4CE5-AB4E-7C0586AEECE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C374DC3-ED19-4CE5-AB4E-7C0586AEECE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C374DC3-ED19-4CE5-AB4E-7C0586AEECE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C374DC3-ED19-4CE5-AB4E-7C0586AEECE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
