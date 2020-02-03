@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFDataAccess", "EntityTempl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice.Console", "Microservice.Console\Microservice.Console.csproj", "{CBF4DD12-CE92-43E8-964F-69B92C25D585}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClientFactoryExample", "HttpClientFactoryExample\HttpClientFactoryExample.csproj", "{D6F56F9F-8D94-42CE-A7ED-CF8421366F1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{CBF4DD12-CE92-43E8-964F-69B92C25D585}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBF4DD12-CE92-43E8-964F-69B92C25D585}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBF4DD12-CE92-43E8-964F-69B92C25D585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6F56F9F-8D94-42CE-A7ED-CF8421366F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6F56F9F-8D94-42CE-A7ED-CF8421366F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6F56F9F-8D94-42CE-A7ED-CF8421366F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6F56F9F-8D94-42CE-A7ED-CF8421366F1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
