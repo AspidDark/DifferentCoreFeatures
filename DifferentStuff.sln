@@ -49,6 +49,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomersApi", "NugetPackag
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomersApi.Moq", "NugetPackages\MockingTutorial\CustomersApi.Moq\CustomersApi.Moq.csproj", "{9A53BCFA-0A07-4D78-AA8B-BE9C010F5129}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomersApi.NSubstitute", "NugetPackages\MockingTutorial\CustomersApi.NSubstitute\CustomersApi.NSubstitute.csproj", "{2A911959-248A-409D-A400-97CD1AF772D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -127,6 +129,10 @@ Global
 		{9A53BCFA-0A07-4D78-AA8B-BE9C010F5129}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A53BCFA-0A07-4D78-AA8B-BE9C010F5129}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A53BCFA-0A07-4D78-AA8B-BE9C010F5129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A911959-248A-409D-A400-97CD1AF772D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A911959-248A-409D-A400-97CD1AF772D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A911959-248A-409D-A400-97CD1AF772D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A911959-248A-409D-A400-97CD1AF772D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -144,6 +150,7 @@ Global
 		{BB97FDF7-7411-4DF5-B525-70920D3694FE} = {1C28016B-1887-48DD-AF36-BEF2AE37FB05}
 		{658FACA0-D9B3-4ADD-AF90-93DDC73796F7} = {BB97FDF7-7411-4DF5-B525-70920D3694FE}
 		{9A53BCFA-0A07-4D78-AA8B-BE9C010F5129} = {BB97FDF7-7411-4DF5-B525-70920D3694FE}
+		{2A911959-248A-409D-A400-97CD1AF772D2} = {BB97FDF7-7411-4DF5-B525-70920D3694FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {49E0CCD6-FB8C-481B-A10B-E1A83DC40763}
