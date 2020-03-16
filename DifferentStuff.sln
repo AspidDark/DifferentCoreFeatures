@@ -67,6 +67,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{8F940E2F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureKeyVaultExample", "AzureKeyVaultExample\AzureKeyVaultExample.csproj", "{665A0895-5A77-47A6-BB59-0A65771C22FC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlobStorageExample", "BlobStorageExample\BlobStorageExample.csproj", "{14D1DE71-C689-429B-9BE5-2FE3C15EB269}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -169,6 +171,10 @@ Global
 		{665A0895-5A77-47A6-BB59-0A65771C22FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{665A0895-5A77-47A6-BB59-0A65771C22FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{665A0895-5A77-47A6-BB59-0A65771C22FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14D1DE71-C689-429B-9BE5-2FE3C15EB269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D1DE71-C689-429B-9BE5-2FE3C15EB269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D1DE71-C689-429B-9BE5-2FE3C15EB269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14D1DE71-C689-429B-9BE5-2FE3C15EB269}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -193,6 +199,7 @@ Global
 		{F8360A00-82D6-46EF-8E70-E46795D42AE0} = {1C28016B-1887-48DD-AF36-BEF2AE37FB05}
 		{4EDFA86B-858E-4471-BBBB-56DE8EDF478E} = {DCF7E95F-361C-44BE-A8F8-BB2C0F5C4C43}
 		{665A0895-5A77-47A6-BB59-0A65771C22FC} = {8F940E2F-2BAA-4E9B-9E13-EA717FE8394B}
+		{14D1DE71-C689-429B-9BE5-2FE3C15EB269} = {8F940E2F-2BAA-4E9B-9E13-EA717FE8394B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {49E0CCD6-FB8C-481B-A10B-E1A83DC40763}
