@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EFDataAccess.DataAccess
 {
+    //add-migration
+    //update-database
     public class PeopleContext : DbContext
     {
         public PeopleContext(DbContextOptions options) : base(options)
