@@ -69,6 +69,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureKeyVaultExample", "Azu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlobStorageExample", "BlobStorageExample\BlobStorageExample.csproj", "{14D1DE71-C689-429B-9BE5-2FE3C15EB269}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RazorPages", "RazorPages", "{544A0CA9-23C7-49AC-8871-C14F5054E2D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -1,0 +1,14 @@
+﻿@page
+@model RazorPagesApp.Pages.UploadExcelFilePageModel
+@{
+    ViewData["Title"] = "UploadExcelFilePage";
+}
+
+    <form method="post" enctype="multipart/form-data">
+        <label asp-for="FileUpload"></label>
+        <input type="file" asp-for="FileUpload" id="FileUpload" />
+        <input type="submit" value="Upload" />
+        <select asp-for="SelectedValue" asp-items="Model.Values">
+            <option selected="selected" value="VTBR2">VTBR2</option>
+        </select>
+    </form>
