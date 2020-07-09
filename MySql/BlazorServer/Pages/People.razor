@@ -1,0 +1,66 @@
+﻿@page "/people"
+
+@using DataLibrary
+@using BlazorServer.Models
+@using Microsoft.Extensions.Configuration
+@inject IDataAccess _data
+@inject IConfiguration _config
+
+<h3>People</h3>
+
+<button class="btn btn-primary" @onclick="InsertData">Insert</button>
+<button class="btn btn-warning" @onclick="UpdateData">Update</button>
+<button class="btn btn-danger" @onclick="DeleteData">Delete</button>
+
+@if (people == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    @foreach (var p in people)
+    {
+        <p>
+            @p.FirstName @p.LastName
+        </p>
+    }
+}
+
+@code {
+    List<PersonModel> people;
+
+    private async Task InsertData()
+    {
+        string sql = "insert into people (FirstName, LastName) values (@FirstName, @LastName);";
+
+        await _data.SaveData(sql, new { FirstName = "Billy", LastName = "Bob" }, _config.GetConnectionString("default"));
+
+        await OnInitializedAsync();
+    }
+
+    private async Task UpdateData()
+    {
+        string sql = "update people set FirstName = @FirstName where LastName = @LastName";
+
+        await _data.SaveData(sql, new { FirstName = "Timothy", LastName = "Corey" }, _config.GetConnectionString("default"));
+
+        await OnInitializedAsync();
+    }
+
+    private async Task DeleteData()
+    {
+        string sql = "delete from people where LastName = @LastName";
+
+        await _data.SaveData(sql, new { LastName = "Bob" }, _config.GetConnectionString("default"));
+
+        await OnInitializedAsync();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        string sql = "select * from people";
+
+        people = await _data.LoadData<PersonModel, dynamic>(sql, new { }, _config.GetConnectionString("default"));
+    }
+
+}
