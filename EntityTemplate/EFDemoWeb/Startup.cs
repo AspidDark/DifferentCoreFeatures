@@ -26,7 +26,10 @@ namespace EFDemoWeb
         public void ConfigureServices(IServiceCollection services)
         {
             //Add-Migration InitialDBCreation
-            services.AddDbContext<PeopleContext>(options=> {
+            //services.AddDbContext<PeopleContext>(options=> {
+            //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            //});
+            services.AddDbContextPool<PeopleContext>(options => {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
             services.AddRazorPages();
