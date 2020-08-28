@@ -1,0 +1,70 @@
+﻿@page
+@model ABSUploadClient.UD.IndexModel
+
+@{
+    ViewData["Title"] = "Загруженные документы";
+}
+
+<h1>Загруженные документы</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Время загрузки
+            </th>
+            <th>
+                Пользователь
+            </th>
+            <th>
+                Код источника
+            </th>
+            <th>
+                Имя файла
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.UploadedDocument)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UploadTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SourceValue)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FileName)
+                </td>
+                <td>
+                    <form method="POST">
+                        <input type="submit" asp-route-id="@item.Id" asp-page-handler="GetId" value="Результат загрузки" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@if (Model.UploadedDocumentsPagination.HasPreviousPage)
+{
+     <a asp-page-handler="OnGet"
+       asp-route-id="@(Model.UploadedDocumentsPagination.PageNumber - 1)"
+       class="btn btn-outline-dark">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Назад
+    </a>
+}
+@if (Model.UploadedDocumentsPagination.HasNextPage)
+{
+    <a asp-page-handler="OnGet"
+       asp-route-id="@(Model.UploadedDocumentsPagination.PageNumber + 1)"
+       class="btn btn-outline-dark">
+        Вперед
+        <i class="glyphicon glyphicon-chevron-right"></i>
+    </a>
+}

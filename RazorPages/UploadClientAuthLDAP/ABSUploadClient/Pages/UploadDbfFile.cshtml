@@ -1,0 +1,12 @@
+﻿@page
+@model ABSUploadClient.Pages.UploadDbfFileModel
+@{
+    ViewData["Title"] = "Загрузить Dbf файл";
+}
+
+<form method="post" enctype="multipart/form-data">
+  <label asp-for="FileUpload">Загрузить</label>
+  <input type="file" asp-for="FileUpload" id="FileUpload"/>
+  <input type="submit" value="Загрузить"/>
+</form>
+

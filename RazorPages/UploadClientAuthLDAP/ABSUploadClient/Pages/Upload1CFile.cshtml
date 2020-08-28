@@ -1,0 +1,10 @@
+﻿@page
+@model ABSUploadClient.Pages.Upload1CFileModel
+@{
+    ViewData["Title"] = "Загрузить Файл 1C";
+}
+    <form method="post" enctype="multipart/form-data">
+        <label asp-for="FileUpload">Загрузить</label>
+        <input type="file" asp-for="FileUpload" id="FileUpload" />
+        <input type="submit" value="Загрузить" />
+    </form>

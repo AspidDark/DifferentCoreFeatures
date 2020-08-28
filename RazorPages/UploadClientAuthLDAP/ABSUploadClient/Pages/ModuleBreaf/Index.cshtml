@@ -1,0 +1,42 @@
+﻿@page
+@model ABSUploadClient.MB.IndexModel
+
+@{
+    ViewData["Title"] = "Настройки";
+}
+
+<h1>Настройки</h1>
+
+<p>
+    <a asp-page="Create">Создать новый</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                 Рассчетный счет
+            </th>
+            <th>
+                 Наименование
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.ModuleBrief) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Accout)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModuleValue)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Детали</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

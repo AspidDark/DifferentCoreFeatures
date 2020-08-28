@@ -1,0 +1,40 @@
+﻿@page
+@model ABSUploadClient.MB.EditModel
+
+@{
+    ViewData["Title"] = "Изменить";
+}
+
+<h1>Изменить</h1>
+
+<h4>Провайдера</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ModuleBrief.Id" />
+            <div class="form-group">
+                <label asp-for="ModuleBrief.Accout" class="control-label">Рассчетный счет</label>
+                <input asp-for="ModuleBrief.Accout" class="form-control" />
+                <span asp-validation-for="ModuleBrief.Accout" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModuleBrief.ModuleValue" class="control-label">Краткое название</label>
+                <input asp-for="ModuleBrief.ModuleValue" class="form-control" />
+                <span asp-validation-for="ModuleBrief.ModuleValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Сохранить" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Назад к списку</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

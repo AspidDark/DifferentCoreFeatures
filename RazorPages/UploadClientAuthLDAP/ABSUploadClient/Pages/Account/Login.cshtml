@@ -1,0 +1,54 @@
+@page
+@model ABSUploadClient.Pages.Account.Login
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Вход в систему</title>
+</head>
+<body>
+  
+<div class="row">  
+    <div class="col-md-8">  
+        <section>  
+            <form method="post" role="form" class="form-horizontal">  
+                @Html.AntiForgeryToken()  
+  
+                <h4>Введите доменные логин и пароль</h4>  
+                <hr />  
+  
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })  
+  
+                <div class="form-group" style="margin-bottom: 10px;">  
+                    @Html.LabelFor(m => m.LoginViewModel.UserName, new { @class = "col-md-2 control-label" })  
+                    <div class="col-md-10">  
+                        @Html.TextBoxFor(m => m.LoginViewModel.UserName, new { @class = "form-control" })  
+                        @Html.ValidationMessageFor(m => m.LoginViewModel.UserName, "", new { @class = "text-danger" })  
+                    </div>  
+                </div>  
+  
+                <div class="form-group" style="margin-bottom: 10px;">  
+                    @Html.LabelFor(m => m.LoginViewModel.Password, new { @class = "col-md-2 control-label" })  
+                    <div class="col-md-10">  
+                        @Html.PasswordFor(m => m.LoginViewModel.Password, new { @class = "form-control" })  
+                        @Html.ValidationMessageFor(m => m.LoginViewModel.Password, "", new { @class = "text-danger" })  
+                    </div>  
+                </div>  
+   
+                <div class="form-group" style="margin-bottom: 10px;">  
+                    <div class="col-md-offset-2 col-md-10">  
+                        <button asp-page-handler="LogIn" class="btn btn-default">Войти</button>  
+                    </div>  
+                </div>  
+            </form>  
+        </section>  
+    </div>  
+</div>
+</body>
+</html>

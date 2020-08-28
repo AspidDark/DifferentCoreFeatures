@@ -1,0 +1,14 @@
+﻿@page
+@model ABSUploadClient.Pages.UploadExcelFilePageModel
+@{
+    ViewData["Title"] = "Загрузить Excel файл";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <label asp-for="FileUpload">Загрузить</label>
+    <input type="file" asp-for="FileUpload" id="FileUpload" />
+    <input type="submit" value="Загрузить" />
+    <select asp-for="SelectedValue" asp-items="Model.Values">
+        <option selected="selected" value="VTBR2">VTBR2</option>
+    </select>
+</form>
