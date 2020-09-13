@@ -1,0 +1,126 @@
+https://www.youtube.com/watch?v=4IgC2Q5-yDE&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU
+
+1. ASP NET Core Tutorial
+2. Setting up machine for asp net core development
+3. Creating asp net core web application
+4. ASP NET core project file
+5. Main method in asp net core
+6. ASP NET Core in process hosting  (Kestrel) .csproj
+7. ASP NET Core out of process hosting   (.csproj OutOfProcess)  internal web server -Kestrel and external web server -Nginx Apachi iis 
+8. ASP NET Core launchsettings json file (only required in development) all development settings
+9. ASP NET Core appsettings json file    
+10. Middleware in ASP NET Core (pipeLine)
+11. Configure ASP NET Core request processing pipeline
+12. Static files in asp net core   (app.UseStaticFiles();) to serve default html app.UsedefaultFiles();<-registered before -app.UseStaticFiles();   app FileServer()
+13. ASP NET Core developer exception page 
+14. ASP NET Core environment variables  //C control panel=> enviroment=> set key (ASPNETCORE_ENVIROMENT)  launchSettings overrride system variebles
+15. ASP NET Core MVC tutorial  
+16. Setup mvc in asp net core  ()=>1 services.AddMvc();  2. after app.UseStaticFiles(); app.useMvc...
+17. ASP NET Core AddMvc vs AddMvcCore ()=> AddMvcCore adds only core (main methods)  AddMvc adds alot AddMvc  also calls AddMvcCore
+18. Model in ASP NET Core MVC
+19. ASP NET Core dependency injection tutorial
+20. Controller in ASP NET Core MVC
+21. Views in ASP NET Core MVC
+22. Customize view discovery in asp net core mvc
+23. Passing data to view in ASP NET Core MVC
+24. ViewBag in ASP NET Core MVC
+25. Strongly Typed View in ASP NET Core MVC
+26. ViewModel in ASP NET Core MVC
+27. List view in asp net core mvc
+28. Layout view in asp net core mvcDb
+29. Sections in layout page in ASP NET Core MVC
+30. ViewStart cshtml in ASP NET Core MVC ()применяет один и тот же код для всех представлений   placed in folder overieds main file  https://www.youtube.com/watch?v=r7WgjrTSlO8&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU&index=30
+31. ViewImports cshtml in ASP NET Core MVC () include common manespaces
+32. Routing in ASP NET Core MVC  () app.UseMvcWithDefaultRoute() MVC+ default routing
+33. Attribute Routing in ASP NET Core MVC () [Route("~/")] + [Route("")] Route to empty path
+34. Install and use Bootstrap in ASP NET Core   
+35. Tag helpers in asp net core  
+36. Why use tag helpers  () reflects changeing routes
+37. ASP NET Core Image tag helper  asp-append-version
+38. ASP NET Core Environment Tag Helper  
+39. Bootstrap navigation menu in asp net core application
+40. Form tag helpers in asp net core 
+41. ASP NET Core Model Binding  ()properties on form that sends it  same as in object of reciving controller
+42. ASP NET Core model validation
+43. Select list validation in asp net core
+44. AddSingleton vs AddScoped vs AddTransient
+45. Introduction to entity framework core
+46. Install entity framework core in visual studio
+47. DbContext in entity framework core
+48. Using sql server with entity framework core () services.AddDbContextPool<AppDataContext>() !!!!!!!   defautl conection string
+49. Repository pattern in asp net core () https://csharp-video-tutorials.blogspot.com/2019/04/repository-pattern-in-aspnet-core.html  Attach!! Modified
+50. Entity framework core migrations
+51. Entity framework core seed data  () override OnModelCreating()  modelBuilader.Entity<Table>().HasData();
+52. Keeping domain models and database schema in sync in asp net core () Update-Database OldMigrationName to revert to OldMigrationName 
+53. File upload in asp net core mvc () Jquery; upload file; hostingEnviroment.WebRootPath  => wwwroot; 
+54. Upload multiple files in asp net core mvc
+55. Edit view in asp net core mvc <input hidden=
+56. httppost edit action in asp net core mvc
+57. Handling 404 not found in asp net core mvc
+58. Centralised 404 error handling in ASP NET Core () app.useStatusCodePages()   app.useStatusCodePagesWithRedirects("/ErrorController/{0}") app.useStatusCodePagesWithReExecute("/ErrorController/{0}")
+59. UseStatusCodePagesWithRedirects vs UseStatusCodePagesWithReExecute 
+60. Global exception handling in asp net core mvc  app.UseExcepitonHandler()
+61. Logging in ASP NET Core
+62. Logging exceptions in ASP NET Core
+63. Logging to file in asp net core using nlog
+64. ASP NET Core LogLevel configuration
+65. ASP NET Core Identity tutorial from scratch  https://www.youtube.com/watch?v=egITMrwMOPU&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU&index=65
+66. Register new user using asp net core identity
+67. ASP NET Core Identity UserManager and SignInManager
+68. ASP NET core identity password complexity
+69. Show or hide login and logout links based on login status in asp net core  https://www.youtube.com/watch?v=YLAHIZmO2PI&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU&index=69
+70. Implementing login functionality in asp net core
+71. Authorization in ASP NET Core  () Authorize allowAnonimus
+72. Redirect user to original url after login in asp net core
+73. Open redirect vulnerability example  Url.IsLocalUrl()
+74. ASP NET Core client side validation
+75. ASP NET core remote validation [AcceptVerbs("Get","Post")]
+76. Custom validation attribute in asp net core    https://www.youtube.com/watch?v=o_AH2MGti0A&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU&index=76
+77. Extend IdentityUser in ASP NET Core 
+78. Creating roles in asp net core
+79. Get list of roles in asp net core
+80. Edit role in asp net core
+81. Add or remove users from role in asp net core  ()
+82. ASP NET Core role based authorization [Authorize] checks if user authentificated
+83. Show or hide navigation menu based on user role in asp net core
+84. List all users from asp net core identity database
+85. Edit identity user in asp net core
+86. Delete identity user in asp net core
+87. ASP NET Core delete confirmation 
+88. Delete identity role in asp net core 
+89. Enforce ON DELETE NO ACTION in entity framework core  
+90. Custom error page in asp net core    
+91. Manage user roles in asp net core identity
+92. Model binding not working on submitting razor view with foreach loop
+93. Manage user claims in asp net core
+94. Claims based authorization in asp net core
+95. Role based authorization vs claims based authorization in asp net core   Role is a Claim(with Type Role) Policy is number of Roles
+96. Authorization in views in asp net core mvc
+97. Change AccessDenied route in ASP NET Core
+98. Claim type and claim value in claims policy based authorization in asp net core  https://www.youtube.com/watch?v=I2wgxzLbESA&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU&index=98&ab_channel=kudvenkat
+99. Create custom authorization policy using func in asp net core
+100. Custom authorization requirements and handlers in asp net core
+101. Custom authorization requirement and handler example in asp net core
+102. Multiple custom authorization handlers for a requirement in asp net core   (Role1 or Role2)
+103. Custom authorization handler success vs failure
+104. External identity providers in asp net core
+105. Create google oauth credentials Client Id and Client Secret   1 Create Google project  2 Enable google+ api 3 Configure Oath 4 Create Oath credentials
+106. ASP NET Core google authentication setting up the UI
+107. ExternalLoginCallback action in asp net core
+108. Register application with facebook  () create app => Enable oath
+109. ASP NET Core facebook authentication 
+110. ASP NET Core secret manager https://www.youtube.com/watch?v=TVF9o5qbrkI&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU&index=110&ab_channel=kudvenkat ()context menu Manage User Secrets 
+111.  Why email confirmation is important
+112.  Block login if email is not confirmed in asp net core  
+113. ASP NET Core email confirmation https://www.youtube.com/watch?v=yRP6C7fhAuE&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU&index=113&ab_channel=kudvenkat
+114. External login email confirmation in asp net core
+115. Forgot password in asp net core  
+116. Reset password in asp net core  https://www.youtube.com/watch?v=72Eu92ZkgCg&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU&index=116&ab_channel=kudvenkat
+117. How tokens are generated and validated in asp net core  https://www.youtube.com/watch?v=fOQjWUokhn8&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU&index=117&ab_channel=kudvenkat
+118. ASP NET Core password reset token lifetime
+119. ASP NET Core custom token provider  
+120. ASP NET Core encryption and decryption example
+121. Change password in asp net core   https://www.youtube.com/watch?v=r7VzoLhFLd0&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU&index=121&ab_channel=kudvenkat
+122. Add password to local account linked to external login   ()=> addPasswordAsync(user password)   signInManager90.RefreshSignInAsync(user)
+123. ASP NET Core account lockout  https://www.youtube.com/watch?v=jHRWR36UC2s&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU&index=123&ab_channel=kudvenkat
+124. ASP NET Core course wrap up   https://www.youtube.com/watch?v=pVV4v6Fpa_s&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU&index=124&ab_channel=kudvenkat
