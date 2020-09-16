@@ -1,0 +1,38 @@
+﻿1. ASP NET Core razor pages introduction    https://www.youtube.com/watch?v=3F9SpUYTB6Y&list=PL6n9fhu94yhX6J31qad0wSO1N_rgGbOPV
+2. ASP NET core 3 0 project file
+3. Layout view in razor pages project
+4. Razor Pages - Creating Reusable Models Project
+5. Razor Pages Creating Reusable Data Access Project
+6. Registering services in razor pages project    https://www.youtube.com/watch?v=aMjiiWtfj2M&list=PL6n9fhu94yhX6J31qad0wSO1N_rgGbOPV&index=6
+7. List razor page
+8. Routing in asp net core razor pages ()  @page "/Route" full path   @page "Route" part of path  @page "{name}" any name    @page "{name:alpha}" abcdef
+9. Query string parameters in asp net core razor pages  () asp-page="/Employees/Details"  asp-route-ID=""  ID имя передаваемого параметра
+10. Route parameters in asp net core razor pages    
+11. Route constraints in asp net core ()  {id:int?}  int is optional :min(1):max(100)  {id:range(1,100)}  :alpha  :regex    :length
+12. ASP NET core custom route constraint  ()class:IRouteConstraint
+13. Handling 404 error in razor pages project
+14. Editing data in asp net core razor pages
+15. Updating data in asp net core razor pages 
+16. File upload in asp net core razor pages ()to send files form method="post" class="mt-3" enctype="multipart/form-data"
+17. Handle multiple forms in asp net core razor pages   <form method="post" asp-page-handler="UpdateNotificationPreferences">
+18. TempData in ASP NET Core  () TempData["message"]  stores data for request  TempData.Keep();
+19.	ASP NET Core razor pages validation	 https://www.youtube.com/watch?v=4kwAt72yJ4s&list=PL6n9fhu94yhX6J31qad0wSO1N_rgGbOPV&index=19
+20. Create form in asp net core razor pages    https://www.youtube.com/watch?v=r9CyRhGvV70&list=PL6n9fhu94yhX6J31qad0wSO1N_rgGbOPV&index=20
+21. ASP NET Core razor pages client side validation
+22. Delete operation in asp net core razor pages
+23. Partial views in asp net core  
+24. ASP NET Core view components  https://www.youtube.com/watch?v=exokw7WQQ-A&list=PL6n9fhu94yhX6J31qad0wSO1N_rgGbOPV&index=24
+25. Pass parameters to view component in asp.net core
+26. ASP NET Core view component tag helper  
+27. Implement search page in ASP NET Core https://www.youtube.com/watch?v=gb6TMtoGQEM&list=PL6n9fhu94yhX6J31qad0wSO1N_rgGbOPV&index=27
+28. Install entity framework core in class library project
+29. Using sql server in razor pages project
+30. EF core migrations in razor pages project   https://www.youtube.com/watch?v=hNPrD3tpeuI&list=PL6n9fhu94yhX6J31qad0wSO1N_rgGbOPV&index=30
+31. Repository pattern in asp net core razor pages   
+32. Using stored procedure in entity framework core   https://www.youtube.com/watch?v=DpLQYVErKm8&list=PL6n9fhu94yhX6J31qad0wSO1N_rgGbOPV&index=32
+33. FromSqlRaw vs ExecuteSqlRaw in ASP NET Core   https://www.youtube.com/watch?v=HHaCTg0kTbA&list=PL6n9fhu94yhX6J31qad0wSO1N_rgGbOPV&index=33
+34. Scaffolding CRUD operations in asp net core
+35. ASP NET core razor pages course wrap up
+
+
+
