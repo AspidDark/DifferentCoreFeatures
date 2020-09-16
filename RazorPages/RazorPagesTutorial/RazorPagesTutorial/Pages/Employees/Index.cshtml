@@ -1,0 +1,32 @@
+﻿@page
+@model RazorPagesTutorial.Pages.Employees.IndexModel
+@{
+    ViewData["Title"] = "Index";
+    ViewData["ShowButtons"] = true;
+}
+
+<style>
+    .btn {
+        width: 75px;
+    }
+</style>
+
+<vc:head-count department="null"></vc:head-count>
+
+<h1>Employees</h1>
+
+<form method="get">
+    <div class="input-group">
+        <input class="form-control" asp-for="SearchTerm">
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </div>
+</form>
+
+<div class="card-deck">
+    @foreach (var employee in Model.Employees)
+    {
+        <partial name="_DisplayEmployeePartial" model="employee" view-data="ViewData" />
+    }
+</div>
