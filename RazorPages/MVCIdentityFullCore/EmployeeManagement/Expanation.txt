@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=4IgC2Q5-yDE&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4
 6. ASP NET Core in process hosting  (Kestrel) .csproj
 7. ASP NET Core out of process hosting   (.csproj OutOfProcess)  internal web server -Kestrel and external web server -Nginx Apachi iis 
 8. ASP NET Core launchsettings json file (only required in development) all development settings
-9. ASP NET Core appsettings json file    
+9. ASP NET Core appsettings json file    ()appsettings.json  => usersecrets=> enviroment variables=> command-line args  последующее override предыдущее
 10. Middleware in ASP NET Core (pipeLine)
 11. Configure ASP NET Core request processing pipeline
 12. Static files in asp net core   (app.UseStaticFiles();) to serve default html app.UsedefaultFiles();<-registered before -app.UseStaticFiles();   app FileServer()
