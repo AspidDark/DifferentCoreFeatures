@@ -9,7 +9,8 @@ namespace EFDataAccess.DataAccess
     {
         public PeopleContext(DbContextOptions options) : base(options)
         {
-           // Database.EnsureCreated();   // создаем базу данных при первом обращении
+            // Database.EnsureCreated();   // создаем базу данных !!без возможности миграций!! только прототипирование при первом обращении
+           // Database.Migrate(); // создаем базу данных !!с возможностью миграций!!
         }
 
         public DbSet<Person> People { get; set; }
