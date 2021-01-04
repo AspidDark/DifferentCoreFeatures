@@ -1,0 +1,12 @@
+https://www.youtube.com/watch?v=uS0hRJqamfU&ab_channel=IAmTimCorey
+
+2:38 SharpZipLib
+4:02 FluentEmail
+5:22 MailKit
+6:14 Papercut SMTP
+8:56 EPPlus
+11:53 Hangfire
+16:19 MassTransit 
+18:34 Polly
+22:20 Serilog
+26:05 Seq
