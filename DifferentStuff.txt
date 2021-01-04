@@ -1,12 +1,40 @@
 https://www.youtube.com/watch?v=uS0hRJqamfU&ab_channel=IAmTimCorey
 
-2:38 SharpZipLib
-4:02 FluentEmail
-5:22 MailKit
-6:14 Papercut SMTP
-8:56 EPPlus
-11:53 Hangfire
-16:19 MassTransit 
-18:34 Polly
-22:20 Serilog
+2:38 SharpZipLib  --- Make zip archives
+4:02 FluentEmail --- Working with mails
+5:22 MailKit --- Working with mails
+6:14 Papercut SMTP --- Mail reciver for testing
+8:56 EPPlus --- Foe Excel
+11:53 Hangfire --- Different shedule stuff
+16:19 MassTransit --- Working with different service Buses
+18:34 Polly ---Retry Policy
+22:20 Serilog --- Loging
 26:05 Seq
+
+SharpZipLib: http://icsharpcode.github.io/SharpZip...
+FluentEmail: https://github.com/lukencode/FluentEmail
+MailKit: https://github.com/jstedfast/MailKit
+Papercut SMTP: https://github.com/ChangemakerStudios...
+EPPlus: https://github.com/EPPlusSoftware/EPPlus
+Hangfire: https://www.hangfire.io/
+MassTransit: https://masstransit-project.com/
+Polly: https://github.com/App-vNext/Polly
+Serilog: https://serilog.net/
+Seq: https://datalust.co/seq
+
+__________________________________________________________________
+
+Log Levels
+Log levels indicate the importance or severity of log messages. Built-in log providers include extension methods to indicate log levels.
+
+The following table lists log levels in .NET Core.
+
+Log Level	Severity	Extension Method	Description
+Trace			0		LogTrace()			Logs messages only for tracing purposes for the developers.
+Debug			1		LogDebug()			Logs messages for short-term debugging purposes.
+Information		2		LogInformation()	Logs messages for the flow of the application.
+Warning			3		LogWarning()		Logs messages for abnormal or unexpected events in the application flow.
+Error			4		LogError()			Logs error messages.
+Critical		5		LogCritical()		Logs failures messages that require immediate attention.
+
+
