@@ -1,0 +1,23 @@
+﻿https://www.youtube.com/watch?v=_iryZxv8Rxw&t=1942s&ab_channel=IAmTimCorey
+
+Program cs configured
+
+Startap cs changed
+
+Appsettings configured
+
+Nuget
+Serilog.AspnetCore
+Serilog.Settings.Configuration
+Serilog.Enrichers.Enviroment
+Serilog.Enrichers.Thread
+Serilog.Enrichers.Process
+
+__________SEQ______________
+
+Serilog.sinks.seq
+
+
+___________________
+https://www.youtube.com/watch?v=oXNslgIXIbQ&t=840s&ab_channel=IAmTimCorey
+

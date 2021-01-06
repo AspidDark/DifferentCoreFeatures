@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=uS0hRJqamfU&ab_channel=IAmTimCorey
 16:19 MassTransit --- Working with different service Buses
 18:34 Polly ---Retry Policy
 22:20 Serilog --- Loging
-26:05 Seq
+26:05 Seq --- Log reader
 
 SharpZipLib: http://icsharpcode.github.io/SharpZip...
 FluentEmail: https://github.com/lukencode/FluentEmail
@@ -36,5 +36,7 @@ Information		2		LogInformation()	Logs messages for the flow of the application.
 Warning			3		LogWarning()		Logs messages for abnormal or unexpected events in the application flow.
 Error			4		LogError()			Logs error messages.
 Critical		5		LogCritical()		Logs failures messages that require immediate attention.
+
+https://www.youtube.com/watch?v=_iryZxv8Rxw&t=1488s&ab_channel=IAmTimCorey
 
 
