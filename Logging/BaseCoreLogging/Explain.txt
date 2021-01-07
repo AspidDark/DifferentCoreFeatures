@@ -1,0 +1,33 @@
+﻿1. Program
+
+2. Pages/Index
+
+3. appsettings.json
+
+"Logging": {
+    "LogLevel": {
+      "Default": "Information",  ()=> By default i log Information and everything below
+      "Microsoft": "Warning",  ()=>for Microsoft i log Warning and everything below
+      "Microsoft.Hosting.Lifetime": "Information"  ()=>for Microsoft.Hosting.Lifetime i log Information and everything below
+      ___New from here___
+
+      "Micreosoft*": "Warning" ()=> everything in Microsoft 
+
+    }
+  },
+
+  "Logging": {
+    "Console":{
+        "LogLevel":{
+            "Default": "Trace"
+        }
+    }
+  }
+"Logging": {
+  "Debug": {
+    "LogLevel": {
+        "Default":"Waring",
+        "Microsoft*":"Waring"
+    }
+  }
+  }
