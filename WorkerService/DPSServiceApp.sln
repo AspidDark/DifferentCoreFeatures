@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPSService", "DPSService\DPSService.csproj", "{1D30C5CB-DD3A-4FDA-8088-5A5A6D7E1AAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D30C5CB-DD3A-4FDA-8088-5A5A6D7E1AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D30C5CB-DD3A-4FDA-8088-5A5A6D7E1AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D30C5CB-DD3A-4FDA-8088-5A5A6D7E1AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D30C5CB-DD3A-4FDA-8088-5A5A6D7E1AAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEAC9F6F-A576-49B6-AAE6-0BF899B3D684}
+	EndGlobalSection
+EndGlobal

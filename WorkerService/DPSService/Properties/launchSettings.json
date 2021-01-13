@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "DPSService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
