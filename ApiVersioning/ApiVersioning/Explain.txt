@@ -1,0 +1,5 @@
+﻿                //https://www.youtube.com/watch?v=iVHtKG0eU_s&t=753s
+        Nuget
+        Microsoft.AspNetCore.Mvc.Versioning
+
+        1. We can create folders(V1, V2 ...). And then Put controllers in them by versions non explaind there but case

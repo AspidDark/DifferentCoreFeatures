@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29613.14
+VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchmarkExample", "BenchmarkExample\BenchmarkExample.csproj", "{EF15C279-7A0F-43ED-B360-A73BAF85C74D}"
 EndProject
@@ -152,6 +152,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DPSService", "WorkerService\DPSService\DPSService.csproj", "{1D30C5CB-DD3A-4FDA-8088-5A5A6D7E1AAC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DPSWeb", "WebExcel\DPSWeb\DPSWeb.csproj", "{248767B8-A85D-4216-8DB2-5BE65D45EE12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiVersioning", "ApiVersioning", "{F5560B86-E612-4A1F-BA66-981D92796360}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiVersioning", "ApiVersioning\ApiVersioning\ApiVersioning.csproj", "{9D2D6AB2-B00B-4216-B187-373F817EC1B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -355,6 +359,10 @@ Global
 		{248767B8-A85D-4216-8DB2-5BE65D45EE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{248767B8-A85D-4216-8DB2-5BE65D45EE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{248767B8-A85D-4216-8DB2-5BE65D45EE12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D2D6AB2-B00B-4216-B187-373F817EC1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D2D6AB2-B00B-4216-B187-373F817EC1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D2D6AB2-B00B-4216-B187-373F817EC1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D2D6AB2-B00B-4216-B187-373F817EC1B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -407,8 +415,9 @@ Global
 		{C61AADB4-9402-4D35-BD2D-5A1E07583842} = {DF73CAD2-6826-4D96-BC96-DDB7DBDD9F8B}
 		{1D30C5CB-DD3A-4FDA-8088-5A5A6D7E1AAC} = {27976853-A2BF-4B76-91AB-66E1F674A87C}
 		{248767B8-A85D-4216-8DB2-5BE65D45EE12} = {BC779C62-0CF4-470A-B73D-4606CA33EE38}
+		{9D2D6AB2-B00B-4216-B187-373F817EC1B1} = {F5560B86-E612-4A1F-BA66-981D92796360}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {39E5BABE-2028-4623-9B82-AF025CE29097}
+		SolutionGuid = {3DD43B17-610F-48B6-9444-A99C8B5750BF}
 	EndGlobalSection
 EndGlobal
