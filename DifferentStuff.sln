@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30717.126
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchmarkExample", "BenchmarkExample\BenchmarkExample.csproj", "{EF15C279-7A0F-43ED-B360-A73BAF85C74D}"
 EndProject
@@ -156,6 +156,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiVersioning", "ApiVersioning", "{F5560B86-E612-4A1F-BA66-981D92796360}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiVersioning", "ApiVersioning\ApiVersioning\ApiVersioning.csproj", "{9D2D6AB2-B00B-4216-B187-373F817EC1B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Excel", "Excel", "{6CE6EB07-4DCC-4810-8B1E-922F67864089}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelDemo", "Excel\ExcelDemo\ExcelDemo.csproj", "{ED369A18-DFC0-4E45-AB9C-2DAF058410FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -363,6 +367,10 @@ Global
 		{9D2D6AB2-B00B-4216-B187-373F817EC1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D2D6AB2-B00B-4216-B187-373F817EC1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D2D6AB2-B00B-4216-B187-373F817EC1B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED369A18-DFC0-4E45-AB9C-2DAF058410FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED369A18-DFC0-4E45-AB9C-2DAF058410FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED369A18-DFC0-4E45-AB9C-2DAF058410FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED369A18-DFC0-4E45-AB9C-2DAF058410FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -416,8 +424,9 @@ Global
 		{1D30C5CB-DD3A-4FDA-8088-5A5A6D7E1AAC} = {27976853-A2BF-4B76-91AB-66E1F674A87C}
 		{248767B8-A85D-4216-8DB2-5BE65D45EE12} = {BC779C62-0CF4-470A-B73D-4606CA33EE38}
 		{9D2D6AB2-B00B-4216-B187-373F817EC1B1} = {F5560B86-E612-4A1F-BA66-981D92796360}
+		{ED369A18-DFC0-4E45-AB9C-2DAF058410FA} = {6CE6EB07-4DCC-4810-8B1E-922F67864089}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3DD43B17-610F-48B6-9444-A99C8B5750BF}
+		SolutionGuid = {9CCCCD5C-8F0B-45D2-B624-3276F16A054C}
 	EndGlobalSection
 EndGlobal
