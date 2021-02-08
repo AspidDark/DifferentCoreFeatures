@@ -161,6 +161,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Excel", "Excel", "{6CE6EB07
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelDemo", "Excel\ExcelDemo\ExcelDemo.csproj", "{ED369A18-DFC0-4E45-AB9C-2DAF058410FA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReactPublish", "ReactPublish", "{1BB0E58A-6739-4048-A823-0E311E0718B1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Users\aupov\Desktop\web.config = ..\..\Users\aupov\Desktop\web.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
