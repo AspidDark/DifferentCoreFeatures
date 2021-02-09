@@ -1,0 +1,30 @@
+https://metanit.com/sharp/aspnet5/2.7.php
+
+Установить:
+aspnetcore-runtime-5.0.2-win-x64
+dotnet-hosting-5.0.2-win
+dotnet-sdk-5.0.102-win-x64
+windowsdesktop-runtime-5.0.2-win-x64
+
+Свойства приложения OutOfProcess
+
+там же
+
+<PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="2.2.1" />  
+
+Program
+public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>().UseIISIntegration(); <----
+                });
+				
+				
+Создал web.cofig (Лежит в корне решения)
+				
+Режим развертывания Зависимое от платформы 
+
+win-64
+
+Настройки пула  -> без управления
