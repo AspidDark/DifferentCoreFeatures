@@ -40,3 +40,4 @@ Critical		5		LogCritical()		Logs failures messages that require immediate attent
 https://www.youtube.com/watch?v=_iryZxv8Rxw&t=1488s&ab_channel=IAmTimCorey
 
 
+GraphQl https://github.com/binarythistle/S04E01---.NET-5-GraphQL-API
