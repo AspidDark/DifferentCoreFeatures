@@ -33,9 +33,17 @@ namespace LogingWithSerilog
             }
         }
 
+
+        //Serilog 
+        // rollingInterval : RollingInterval.Day Как часто
+        // hostingContext.Configuration.GetSection("LogPath") путь из appsettings.json
+        // 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-            .UseSerilog()
+            Host.CreateDefaultBuilder(args).
+            UseSerilog((hostingContext, loggerConfiguration) => loggerConfiguration
+            .ReadFrom.Configuration(hostingContext.Configuration)
+            .Enrich.FromLogContext().WriteTo.File(hostingContext.Configuration.GetSection("LogPath").Value, 
+                rollingInterval : RollingInterval.Day))
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
