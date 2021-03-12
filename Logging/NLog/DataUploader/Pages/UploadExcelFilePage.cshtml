@@ -1,0 +1,13 @@
+﻿@page
+@model ABSUploadClient.Pages.UploadExcelFilePageModel
+@{
+    ViewData["Title"] = "Загрузить Excel файл";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <label asp-for="FileUpload">Загрузить</label>
+    <input type="file" asp-for="FileUpload" id="FileUpload" />
+    <input type="submit" value="Загрузить" />
+    <label asp-for="SubDivisionId" class="control-label"></label>
+    <input asp-for="SubDivisionId" class="form-control" />
+</form>
