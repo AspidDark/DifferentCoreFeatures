@@ -21,7 +21,6 @@ namespace DataUploader.Pages
 
         public void OnGet()
         {
-            _logger.LogWarning("zzzzzz");
         }
     }
 }

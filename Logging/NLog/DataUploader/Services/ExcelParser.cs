@@ -56,7 +56,7 @@ namespace DataUploader.Services
                 string json = JsonSerializer.Serialize(excelResult);
                 _logger.LogInformation($"начинаю отправку в Каскад {excelResult.Count} Записей");
                 IRestResponse cascsdResponse = _cascadClientFactory.PostExcelFile(json);
-                _logger.LogInformation($"Отпрваленов Каскад {excelResult.Count} Записей");
+                _logger.LogInformation($"Отпрвалено в Каскад {excelResult.Count} Записей");
                 return "Done";
             }
             catch (Exception e)
