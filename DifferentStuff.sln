@@ -169,6 +169,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IISDeploy", "IISDeploy", "{8C78E93B-09EA-4BA1-92B6-C2AB5C18BF3D}"
 	ProjectSection(SolutionItems) = preProject
 		Explain.txt = Explain.txt
+		web.config = web.config
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FluentEmail", "FluentEmail", "{6AE995F3-B50A-49A5-B481-A7B2BF8954FC}"
