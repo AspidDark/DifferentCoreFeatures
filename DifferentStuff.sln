@@ -182,6 +182,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommanderGQL", "GraghQL\Com
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataUploader", "Logging\NLog\DataUploader\DataUploader.csproj", "{4B800FF2-2D4A-43ED-8179-67014289A37A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MongoDB", "MongoDB", "{077923BD-6F7A-45BF-9AE4-D906981E9ADA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoDB", "..\..\Users\aupov\source\repos\MongoDBApp\MongoDB\MongoDB.csproj", "{7539FE59-E9EE-42F5-BBD4-F24FA81F068F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -404,6 +408,10 @@ Global
 		{4B800FF2-2D4A-43ED-8179-67014289A37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B800FF2-2D4A-43ED-8179-67014289A37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B800FF2-2D4A-43ED-8179-67014289A37A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7539FE59-E9EE-42F5-BBD4-F24FA81F068F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7539FE59-E9EE-42F5-BBD4-F24FA81F068F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7539FE59-E9EE-42F5-BBD4-F24FA81F068F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7539FE59-E9EE-42F5-BBD4-F24FA81F068F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -461,6 +469,7 @@ Global
 		{59D6D75D-6711-41AE-9B1C-786548775C01} = {6AE995F3-B50A-49A5-B481-A7B2BF8954FC}
 		{A71445D8-B848-4690-BDE2-61DAC2C89ABA} = {24AA3F91-A9DC-4565-8751-979E63469401}
 		{4B800FF2-2D4A-43ED-8179-67014289A37A} = {DF73CAD2-6826-4D96-BC96-DDB7DBDD9F8B}
+		{7539FE59-E9EE-42F5-BBD4-F24FA81F068F} = {077923BD-6F7A-45BF-9AE4-D906981E9ADA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1548A1F8-F841-43F3-A87E-DD2E16DA5CF1}
