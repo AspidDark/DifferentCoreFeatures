@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=2fOrYTFZvFA 
+
+–азруливание одинаковых неймспейсов 
+
+extern alias JsonOld
+
+using JsonOld::Newtonsoft.Json;
+using JsonConv12 =JsonNew::Newtonsoft.Json
+
+global:: получение доступа к глобальному namespace

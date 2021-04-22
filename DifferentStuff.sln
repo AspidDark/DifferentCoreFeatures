@@ -142,6 +142,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseCoreLogging", "Logging\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{857F269E-E9A9-420B-9247-7982437270DF}"
 	ProjectSection(SolutionItems) = preProject
+		Different.txt = Different.txt
 		ToAdd.txt = ToAdd.txt
 	EndProjectSection
 EndProject
