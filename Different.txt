@@ -8,3 +8,10 @@ using JsonOld::Newtonsoft.Json;
 using JsonConv12 =JsonNew::Newtonsoft.Json
 
 global:: получение доступа к глобальному namespace
+
+
+Informational responses (100Ц199)
+Successful responses (200Ц299)
+Redirects (300Ц399)
+Client errors (400Ц499)
+Server errors (500Ц599)
