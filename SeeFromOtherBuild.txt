@@ -1,0 +1,6 @@
+Вставить в настройки проекта 
+Это позволит другому проекту Юниттестам или еще чему видеть Internal Классы
+
+ <ItemGroup>
+      <InternalsVisibleTo Include="ИМЯ" />
+  </ItemGroup>
