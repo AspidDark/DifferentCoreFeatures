@@ -42,7 +42,7 @@ namespace LogingWithSerilog
             Host.CreateDefaultBuilder(args).
             UseSerilog((hostingContext, loggerConfiguration) => loggerConfiguration
             .ReadFrom.Configuration(hostingContext.Configuration)
-            .Enrich.FromLogContext().WriteTo.File(hostingContext.Configuration.GetSection("LogPath").Value, 
+            .Enrich.FromLogContext().WriteTo.File(hostingContext.Configuration.GetSection("Serilog:LogPath").Value, 
                 rollingInterval : RollingInterval.Day))
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
