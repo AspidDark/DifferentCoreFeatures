@@ -1,0 +1,4 @@
+Human readable strings 
+How to work with text in .NET like a pro with Humanizer
+
+https://www.youtube.com/watch?v=bLKXqJwRNSY
