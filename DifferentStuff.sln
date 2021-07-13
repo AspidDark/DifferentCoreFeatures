@@ -145,6 +145,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Different.txt = Different.txt
 		SeeFromOtherBuild.txt = SeeFromOtherBuild.txt
 		ToAdd.txt = ToAdd.txt
+		VisualStudioSettings.txt = VisualStudioSettings.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerService", "WorkerService", "{27976853-A2BF-4B76-91AB-66E1F674A87C}"

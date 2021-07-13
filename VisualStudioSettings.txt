@@ -1,0 +1,19 @@
+Tools=>Options=>TextEditor=>C#=>Advanced=>add missing using directives on paste
+
+Tools=>Options=>TextEditor=>C#=>Advanced=>show inheritance margin
+
+=> клик на проект => Удаление ненужных ссылок на пакеты 
+
+=> клик на проект => Editor Config все визуальные настройки проекта Code_Style
+
+
+
+
+
+
+
+
+
+
+
+
