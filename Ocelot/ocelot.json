@@ -1,0 +1,31 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "Путь куда стучимся внутри",
+      "DownstreamScheme": "\",  схема https или http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5001"
+        }
+      ],
+      "UpstreamPathTemplate": "api/wather/{id}  то куда приходит",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthentificationOptions": { //добавляем Jwt
+        "AuthentificationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": { // настройка ограничений запросов
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Preiod": "5s",
+        "PeriodTimespan": 1,
+        "Limit ": 1
+      },
+      "FileChacheOptions": {"TtlSecinds": 15} //кеширование
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "Основной путь"
+  }
+}

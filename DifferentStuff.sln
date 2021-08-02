@@ -207,6 +207,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Thread", "Thread", "{A6C27F
 		When All extension.PNG = When All extension.PNG
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ocelot", "Ocelot", "{26039978-91E9-4F76-977E-DE7365EAA55E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocelot.Demo", "Ocelot\Ocelot.Demo.csproj", "{18AE5F2D-A700-41F6-9398-57ECF92DA14C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -445,6 +449,10 @@ Global
 		{0CA09A80-4245-4B87-89B8-F4D926462E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CA09A80-4245-4B87-89B8-F4D926462E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CA09A80-4245-4B87-89B8-F4D926462E26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18AE5F2D-A700-41F6-9398-57ECF92DA14C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AE5F2D-A700-41F6-9398-57ECF92DA14C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AE5F2D-A700-41F6-9398-57ECF92DA14C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AE5F2D-A700-41F6-9398-57ECF92DA14C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -506,6 +514,7 @@ Global
 		{CDD0E08A-4674-444C-ADA7-80E68137B741} = {836AAC8D-4044-4635-9D1E-1D916CF4318F}
 		{88D5A92B-BA78-43E3-9486-CE677F6A953C} = {836AAC8D-4044-4635-9D1E-1D916CF4318F}
 		{0CA09A80-4245-4B87-89B8-F4D926462E26} = {836AAC8D-4044-4635-9D1E-1D916CF4318F}
+		{18AE5F2D-A700-41F6-9398-57ECF92DA14C} = {26039978-91E9-4F76-977E-DE7365EAA55E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1548A1F8-F841-43F3-A87E-DD2E16DA5CF1}
