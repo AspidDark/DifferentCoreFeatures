@@ -41,3 +41,56 @@ https://www.youtube.com/watch?v=_iryZxv8Rxw&t=1488s&ab_channel=IAmTimCorey
 
 
 GraphQl https://github.com/binarythistle/S04E01---.NET-5-GraphQL-API
+
+
+
+
+Next____
+
+Api Rate Limit  https://www.youtube.com/watch?v=GQAgh_z1rHY
+
+What is Span in C# and why you should be using it  https://www.youtube.com/watch?v=FM5dpxJMULY
+
+https://www.youtube.com/watch?v=r-Jte8Y8zag  Getting started with API Load Testing (Stress, Spike, Load, Soak)
+
+https://www.youtube.com/watch?v=jZmdQL321kA   Automated UI testing in .NET using Playwright and Specflow
+
+https://www.youtube.com/watch?v=bLKXqJwRNSY   Humanizer
+
+https://www.youtube.com/watch?v=YU3ohofu6UU   Writing robust integration tests in .NET with WireMock.NET
+
+https://www.youtube.com/watch?v=qWEDkHGNhvk    Elegant Acceptance Testing in .NET with SpecFlow
+
+https://www.youtube.com/watch?v=EEeVU0z26u0    Getting started with Behavior Driven Development (BDD) in .NET using SpecFlow
+
+https://www.youtube.com/watch?v=h4uldNA1JUE    Treating Primitive Obsession with ValueObjects | DDD in .NET
+
+Bidirectional Streaming | gRPC in .NET 5     https://www.youtube.com/watch?v=wY4nMSUF9e0
+
+https://www.youtube.com/watch?v=DNxdvRQ4qRQ   Client Streaming | gRPC in .NET 5
+
+https://www.youtube.com/watch?v=F2T6xNRoa1E    Server Streaming | gRPC in .NET 5
+
+https://www.youtube.com/watch?v=hp5FTB7PI9s    gRPC Server & Unary Calls | gRPC in .NET 5
+ 
+https://www.youtube.com/watch?v=iVHtKG0eU_s&t=832s    Elegant API Versioning in ASP.NET Core (Web API)
+
+https://www.youtube.com/watch?v=sdKBhDl-dCs     Fast and efficient data serialisation with Protocol buffers (protobuf) in .NET
+
+https://www.youtube.com/watch?v=JljTcjt798c     Make your microservice resilient with Polly's Circuit Breaker | .NET Core
+
+https://www.youtube.com/watch?v=0acSdHJfk64     Logging into Elasticsearch using Serilog and viewing logs in Kibana | .NET Core Tutorial
+
+
+
+
+
+
+
+
+
+
+
+
+
+
