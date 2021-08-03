@@ -24,6 +24,9 @@ Seq: https://datalust.co/seq
 
 __________________________________________________________________
 
+()appsettings.json  => usersecrets=> enviroment variables=> command-line args
+
+
 Log Levels
 Log levels indicate the importance or severity of log messages. Built-in log providers include extension methods to indicate log levels.
 
