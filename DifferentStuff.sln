@@ -132,6 +132,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{1E63A138-45EB-4A6B-AE99-E74EB9667F3B}"
 	ProjectSection(SolutionItems) = preProject
 		DifferentStuff.txt = DifferentStuff.txt
+		..\..\Users\aupov\Desktop\photo_2021-08-09_18-18-05.jpg = ..\..\Users\aupov\Desktop\photo_2021-08-09_18-18-05.jpg
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{DF73CAD2-6826-4D96-BC96-DDB7DBDD9F8B}"
