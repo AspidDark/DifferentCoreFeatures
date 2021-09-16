@@ -85,7 +85,7 @@ https://www.youtube.com/watch?v=0acSdHJfk64     Logging into Elasticsearch using
 
 How to create your own Fluent API in C#   https://www.youtube.com/watch?v=1JAdZul-aRQ
 
-
+https://question-it.com/questions/1659743/kak-zaregistrirovat-neskolko-realizatsij-odnogo-i-togo-zhe-interfejsa-v-aspnet-core  DI много калассов 1 Интерфейс
 
 
 
