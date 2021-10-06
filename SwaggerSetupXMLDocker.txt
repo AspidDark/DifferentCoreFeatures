@@ -1,0 +1,15 @@
+ <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>8a6377cf-b769-47a1-9534-49f8210e6b59</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <Version>1.1.10.5</Version>
+    <AssemblyVersion>1.1.10.5</AssemblyVersion>
+    <FileVersion>1.1.10.5</FileVersion>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>    <-------------
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>$(AssemblyName).xml</DocumentationFile>  <-------------
+    <WarningLevel>0</WarningLevel>
+    <OutputPath>\bin\Debug\</OutputPath>
+  </PropertyGroup>
