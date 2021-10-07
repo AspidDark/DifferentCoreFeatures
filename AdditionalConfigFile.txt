@@ -1,0 +1,13 @@
+WebHost.CreateDefaultBuilder(args)
+.ConfigureAppConfiguration((hostingContext, config) =>
+{
+    config.SetBasePath(Directory.GetCurrentDirectory());
+    config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+    config.AddJsonFile("appsettings.Development.json", optional: false, reloadOnChange: true);
+    config.AddEnvironmentVariables();
+
+})
+
+
+
+https://edi.wang/post/2019/1/5/auto-refresh-settings-changes-in-aspnet-core-runtime
