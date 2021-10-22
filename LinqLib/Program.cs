@@ -41,7 +41,7 @@ namespace LinqLib
             #endregion
 
             #region Concat соединяет две входные последовательности и выдает одну выходную последовательность
-            IEnumerable<string> auto7 = cars.Take(6).Concat(cars.Skip(4)).OrderBy(x=>x);
+            IEnumerable<string> auto7 = cars.Take(6).Concat(cars.Skip(4)).OrderBy(x => x);
             #endregion
 
             #region OrderBy и OrderByDescending Операции упорядочивания позволяют выстраивать входные последовательности в определенном порядке
@@ -78,7 +78,7 @@ namespace LinqLib
                 e1 => e1.id,        //  outerKeySelector
                 o => o.id,        //  innerKeySelector
                 (e1, o) => new       //  resultSelector
-          {
+                {
                     id = e1.id,
                     name = string.Format("{0} {1}", e1.firstName, e1.lastName),
                     options = o.optionsCount
@@ -361,9 +361,101 @@ namespace LinqLib
             //https://professorweb.ru/my/LINQ/linq_xml/level5/5_2.php
             foreach (var item in auto7)
             {
-            Console.WriteLine(item);
+                Console.WriteLine(item);
             }
-                Console.ReadKey();
+            Console.ReadKey();
+
+
+            //ZIP Метод Zip позволяет объединять две последовательности таким образом, что первый элемент
+            //из первой последовательности объединяется с первым элементом из второй последовательности,
+            //второй элемент из первой последовательности соединяется со вторым элементом из второй
+            //последовательности и так далее
+            List<Team> teams = new List<Team>()
+                {
+                    new Team { Name = "Бавария", Country ="Германия" },
+                    new Team { Name = "Барселона", Country ="Испания" },
+                    new Team { Name = "Ювентус", Country ="Италия" }
+                };
+            List<Player> players = new List<Player>()
+            {
+                 new Player {Name="Роббен", Team="Бавария"},
+                 new Player {Name="Неймар", Team="Барселона"},
+                 new Player {Name="Буффон", Team="Ювентус"}
+            };
+            var result2 = players.Zip(teams,
+                                      (player, team) => new
+                                      {
+                                          Name = player.Name,
+                                          Team = team.Name,
+                                          Country = team.Country
+                                      });
+
+            //////////////C#10  https://www.youtube.com/watch?v=sIXKpyhxHR8
+            /// ToADD
+            //..Chunks
+            //const int PAGE_SIZE = 5;
+
+            //IEnumerable<Movie[]> chunks = movies.Chunk(PAGE_SIZE);
+
+
+
+            //..TryGetNonEnumeratedCount
+            //if (movies.TryGetNonEnumeratedCount(out int count))
+            //            {
+            //                Console.WriteLine($"The count is {count}");
+            //            }
+            //else
+            //            {
+            //                Console.WriteLine("Could not get a count of movies without enumerating the collection");
+            //            }
+
+
+            //..Three way zipping
+            //string[] titles = { "A Tale of Two Variables", "The Heisenbug", "Pride, prejudice, and semicolons" };
+            //string[] genres = { "Drama", "Horror", "Romance" };
+            //float[] ratings = { 5f, 3.5f, 4.5f };
+
+            //foreach ((string title, string genre, float rating) in titles.Zip(genres, ratings))
+            //{
+            //    Console.WriteLine($"{title} is a {genre} film that got a rating of {rating}");
+            //}
+
+
+            //..MaxBy, MinBy, the other By's New methods DistinctBy, UnionBy, IntersectBy, and ExceptBy
+            //Movie mostAction = movies.MaxBy(m => m.NumSpaceBattles);
+
+
+
+            //..ElementAt accepts Index  ^
+            //var elements = source2.Take(range: 10..^10)
+            //Movie lastMovie = movies.ElementAt(^1);
+
+
+
+            //..Take accept range/index ".."
+            //var elements = source2.Take(range: 10..^10)
+            //Movie middleMovies = movies.Take(6..10);
+
+
+
+            //..Default Parameters for Common Methods
+            //Movie defaultValue = movies.First();
+            //Movie movie = movies.FirstOrDefault(m => m.Cast.Includes("Matt Eland"), defaultValue);
+
         }
+
+
+
+    }
+
+    class Player
+    {
+        public string Name { get; set; }
+        public string Team { get; set; }
+    }
+    class Team
+    {
+        public string Name { get; set; }
+        public string Country { get; set; }
     }
 }
