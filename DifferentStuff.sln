@@ -236,7 +236,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProfilerAndGC", "ProfilerAn
 		feature.txt = feature.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ef6NewFeatures", "Ef6NewFeatures\Ef6NewFeatures.csproj", "{5CF65B32-3262-4131-B677-3CC498FD0762}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ef6NewFeatures", "Ef6NewFeatures\Ef6NewFeatures.csproj", "{5CF65B32-3262-4131-B677-3CC498FD0762}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoDataAccess", "MongoDB\ConnectMongoDBToCSharp\MongoDataAccess\MongoDataAccess.csproj", "{AED6B1E1-BB7D-4E07-8978-63DB0A918660}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLibrary", "cacheing\IntroToInMemoryCaching\DataAccessLibrary\DataAccessLibrary.csproj", "{BAD03FD3-14D9-4D9E-8C54-01B00C9956D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CachingExample", "cacheing\IntroToInMemoryCaching\CachingExample\CachingExample.csproj", "{F41D05C0-3A8F-4715-8875-35996B8D81C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -500,6 +506,18 @@ Global
 		{5CF65B32-3262-4131-B677-3CC498FD0762}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CF65B32-3262-4131-B677-3CC498FD0762}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CF65B32-3262-4131-B677-3CC498FD0762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AED6B1E1-BB7D-4E07-8978-63DB0A918660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AED6B1E1-BB7D-4E07-8978-63DB0A918660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AED6B1E1-BB7D-4E07-8978-63DB0A918660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AED6B1E1-BB7D-4E07-8978-63DB0A918660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD03FD3-14D9-4D9E-8C54-01B00C9956D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD03FD3-14D9-4D9E-8C54-01B00C9956D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD03FD3-14D9-4D9E-8C54-01B00C9956D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD03FD3-14D9-4D9E-8C54-01B00C9956D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F41D05C0-3A8F-4715-8875-35996B8D81C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41D05C0-3A8F-4715-8875-35996B8D81C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41D05C0-3A8F-4715-8875-35996B8D81C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41D05C0-3A8F-4715-8875-35996B8D81C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -567,6 +585,9 @@ Global
 		{95187D91-4782-4A8A-8F47-D657A7640E58} = {12D6C35E-46C4-416E-8844-5B41E13A57B2}
 		{E9C936D4-1061-4A03-A83F-7DBE212CB1B7} = {3D28E08A-4A2A-4475-AE24-9399471E7F24}
 		{5CF65B32-3262-4131-B677-3CC498FD0762} = {020F279B-4F00-4EFC-BD6D-66A1697C41F7}
+		{AED6B1E1-BB7D-4E07-8978-63DB0A918660} = {077923BD-6F7A-45BF-9AE4-D906981E9ADA}
+		{BAD03FD3-14D9-4D9E-8C54-01B00C9956D8} = {279406F0-0662-45FE-9E34-2351FCBEDD49}
+		{F41D05C0-3A8F-4715-8875-35996B8D81C6} = {279406F0-0662-45FE-9E34-2351FCBEDD49}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1548A1F8-F841-43F3-A87E-DD2E16DA5CF1}
