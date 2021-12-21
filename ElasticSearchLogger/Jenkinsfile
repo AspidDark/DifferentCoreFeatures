@@ -1,0 +1,55 @@
+def service_name = 'logservice'
+def dockerfile_dir = 'LogService'
+def dockerImage
+
+pipeline {
+    agent { label 'cascade-docker-node1' }
+
+    stages {         
+
+        stage('Building image') {
+            steps {
+                script {
+                    dockerImage = docker.build ("registry.platform.tatar.ru/cascade/${service_name}:${env.BRANCH_NAME}", "--file ./${dockerfile_dir}/Dockerfile . --build-arg http_proxy=http://10.11.63.86:3128 --pull --force-rm --no-cache")
+                }
+            }
+        }
+
+        stage('Pushing image to registry') {
+            steps {
+                script {
+                    docker.withRegistry('https://registry.platform.tatar.ru', 'jenkins_registry') {
+                        dockerImage.push("${env.BRANCH_NAME}")                      
+                    }
+                sh '''docker image prune -af'''
+                }
+            }
+        }
+
+        stage('Deploying docker container to test') {
+            when {
+                branch 'develop'
+            }      
+            steps {
+                build job: "deployments/${service_name}/deploy_${service_name}_test", wait: true
+                }
+            }
+			
+		stage('Deploying docker container to stage') {
+            when {
+                branch 'stage'
+            }  
+            steps {
+                build job: "deployments/${service_name}/deploy_${service_name}_stage", wait: true
+            }
+        }
+    }
+
+    post {
+        // Cleaning up after building and pushing
+        always {
+            cleanWs()
+        }
+    }
+
+}

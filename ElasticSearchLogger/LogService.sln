@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogService", "LogService\LogService.csproj", "{77DC1C45-AAA0-4F6F-8F3E-F610561E517B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticLogBuilder", "ElasticLogBuilder\ElasticLogBuilder.csproj", "{762EA6FD-080E-4146-AA9B-5862F8BC9B5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Docker|Any CPU = Docker|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77DC1C45-AAA0-4F6F-8F3E-F610561E517B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77DC1C45-AAA0-4F6F-8F3E-F610561E517B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77DC1C45-AAA0-4F6F-8F3E-F610561E517B}.Docker|Any CPU.ActiveCfg = Docker|Any CPU
+		{77DC1C45-AAA0-4F6F-8F3E-F610561E517B}.Docker|Any CPU.Build.0 = Docker|Any CPU
+		{77DC1C45-AAA0-4F6F-8F3E-F610561E517B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77DC1C45-AAA0-4F6F-8F3E-F610561E517B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762EA6FD-080E-4146-AA9B-5862F8BC9B5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762EA6FD-080E-4146-AA9B-5862F8BC9B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762EA6FD-080E-4146-AA9B-5862F8BC9B5C}.Docker|Any CPU.ActiveCfg = Debug|Any CPU
+		{762EA6FD-080E-4146-AA9B-5862F8BC9B5C}.Docker|Any CPU.Build.0 = Debug|Any CPU
+		{762EA6FD-080E-4146-AA9B-5862F8BC9B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762EA6FD-080E-4146-AA9B-5862F8BC9B5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A05818E3-CE27-41AE-9BE4-0CC4959DE388}
+	EndGlobalSection
+EndGlobal
