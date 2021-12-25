@@ -250,6 +250,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogService", "ElasticSearch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElasticLogBuilder", "ElasticSearchLogger\ElasticLogBuilder\ElasticLogBuilder.csproj", "{1D146B0F-DE90-47DB-8318-72B3F0C0F16E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JsonSerializer", "JsonSerializer", "{474B2201-FAEA-4CB3-9B28-65EBFA1E8AD8}"
+	ProjectSection(SolutionItems) = preProject
+		Class1.cs = Class1.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
