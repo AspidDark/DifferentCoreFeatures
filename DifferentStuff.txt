@@ -11,6 +11,15 @@ https://www.youtube.com/watch?v=uS0hRJqamfU&ab_channel=IAmTimCorey
 22:20 Serilog --- Loging
 26:05 Seq --- Log reader
 
+https://www.youtube.com/watch?v=pDCMXoisvX4
+
+Cocona - https://github.com/mayuki/Cocona       Minimal Api for console
+PowerUp - https://github.com/badamczewski/PowerUp    
+dotnet-testcontainers - https://github.com/HofmeisterAn/dotne...      докер контейнеры запуск из кода
+RegExtract - https://github.com/sblom/RegExtract    регексы
+UnitsNet - https://github.com/angularsen/UnitsNet    Перевод значений из километров в футы туда сюда
+
+
 SharpZipLib: http://icsharpcode.github.io/SharpZip...
 FluentEmail: https://github.com/lukencode/FluentEmail
 MailKit: https://github.com/jstedfast/MailKit
