@@ -266,6 +266,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sheduller", "Sheduller", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationService", "Sheduller\NotificationService\NotificationService.csproj", "{E8AB98F2-2216-4F92-9E48-8F949058CF78}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestingOfUnittestsStryker", "TestingOfUnittestsStryker", "{6E2A2C5F-83A5-4425-A016-F66C8939C470}"
+	ProjectSection(SolutionItems) = preProject
+		Stryker.txt = Stryker.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
