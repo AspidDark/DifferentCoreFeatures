@@ -11,6 +11,15 @@ https://www.youtube.com/watch?v=uS0hRJqamfU&ab_channel=IAmTimCorey
 22:20 Serilog --- Loging
 26:05 Seq --- Log reader
 
+https://www.youtube.com/watch?v=pDCMXoisvX4
+
+Cocona - https://github.com/mayuki/Cocona       Minimal Api for console
+PowerUp - https://github.com/badamczewski/PowerUp    
+dotnet-testcontainers - https://github.com/HofmeisterAn/dotne...      докер контейнеры запуск из кода
+RegExtract - https://github.com/sblom/RegExtract    регексы
+UnitsNet - https://github.com/angularsen/UnitsNet    Перевод значений из километров в футы туда сюда
+
+
 SharpZipLib: http://icsharpcode.github.io/SharpZip...
 FluentEmail: https://github.com/lukencode/FluentEmail
 MailKit: https://github.com/jstedfast/MailKit
@@ -86,8 +95,8 @@ https://www.youtube.com/watch?v=0acSdHJfk64     Logging into Elasticsearch using
 How to create your own Fluent API in C#   https://www.youtube.com/watch?v=1JAdZul-aRQ
 
 https://question-it.com/questions/1659743/kak-zaregistrirovat-neskolko-realizatsij-odnogo-i-togo-zhe-interfejsa-v-aspnet-core  DI много калассов 1 Интерфейс
-
-
+https://question-it.com/questions/1659743/kak-zaregistrirovat-neskolko-realizatsij-odnogo-i-togo-zhe-interfejsa-v-aspnet-core
+https://dejanstojanovic.net/aspnet/2018/december/registering-multiple-implementations-of-the-same-interface-in-aspnet-core/
 
 
 

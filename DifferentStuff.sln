@@ -266,10 +266,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sheduller", "Sheduller", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationService", "Sheduller\NotificationService\NotificationService.csproj", "{E8AB98F2-2216-4F92-9E48-8F949058CF78}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Polly", "Polly", "{8CEDCF10-2647-45C6-80A3-EB56D7567264}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestService", "NugetPackages\Polly\RequestService.csproj", "{E6E4D2A2-C2D3-4A3C-8DC7-608838338FBA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
