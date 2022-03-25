@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Telemetry QA UI</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.3/signalr.min.js" integrity="sha512-tjVd2CQVR1kY0h9MKM7PzmX9viGDUoYkPt1EBfPHVMskwwZ1d7gPGmWOrvZIidBKqNyZdDl4PUVFVVXNQJ3L+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+<div id="root"></div>
+
+<script>
+    (async function main() {
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl(window.location.origin)
+            .build();
+
+        connection.on("telemetryReceived", (telemetry) => {
+            telemetry = JSON.parse(telemetry);
+
+            const div = document.createElement("div");
+            div.innerHTML = `
+                <div>&bull; ${new Date().toLocaleString()}</div>
+                <pre>${JSON.stringify(telemetry, undefined, 2)}</pre>
+                <hr />
+            `;
+            document.getElementById("root").appendChild(div);
+        });
+
+        await connection.start();
+    })();
+</script>
+
+</body>
+
+</html>
+
+
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Extensions.Http;
+using ExecutionContext = Microsoft.Azure.WebJobs.ExecutionContext;
+
+namespace NugsNet.Telemetry.QA.FuncApp.Functions;
+
+public static class Index
+{
+    [FunctionName(nameof(Index))]
+    public static async Task<IActionResult> Run(
+        [HttpTrigger(AuthorizationLevel.Anonymous, Route = "index")] HttpRequest req,
+        ExecutionContext context)
+    {
+        var path = Path.Combine(context.FunctionAppDirectory, "Content", "index.html");
+        return new ContentResult
+        {
+            Content = await File.ReadAllTextAsync(path),
+            ContentType = "text/html",
+        };
+    }
+}
+
+
+using System.Text;
+using Azure.Messaging.EventHubs;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Extensions.SignalRService;
+using Microsoft.Extensions.Logging;
+
+namespace NugsNet.Telemetry.QA.FuncApp.Functions;
+
+public static class TelemetryRelay
+{
+    [FunctionName(nameof(TelemetryRelay))]
+    public static async Task Run(
+        [EventHubTrigger($"%{Constants.EventHubName}%", ConsumerGroup = $"%{Constants.EventHubConsumerGroup}%", Connection = Constants.EventHubConnectionString)] EventData[] events,
+        [SignalR(HubName = Constants.SignalRHubName, ConnectionStringSetting = Constants.SignalRConnectionString)] IAsyncCollector<SignalRMessage> signalRMessages,
+        ILogger logger)
+    {
+        var exceptions = new List<Exception>();
+
+        foreach (var eventData in events)
+        {
+            var messageBody = string.Empty;
+            try
+            {
+                messageBody = Encoding.UTF8.GetString(eventData.Body.ToArray());
+                await signalRMessages.AddAsync(new SignalRMessage
+                {
+                    Target = "telemetryReceived",
+                    Arguments = new object[] { messageBody },
+                });
+            }
+            catch (Exception e)
+            {
+                logger.LogInformation("Request Body: {Body}, ExceptionMessage: {Message}", messageBody, e.InnerException?.Message ?? e.Message);
+                exceptions.Add(e);
+            }
+        }
+
+        if (exceptions.Count > 1)
+        {
+            throw new AggregateException(exceptions);
+        }
+
+        if (exceptions.Count == 1)
+        {
+            throw exceptions.Single();
+        }
+    }
+}
