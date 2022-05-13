@@ -99,7 +99,7 @@ https://question-it.com/questions/1659743/kak-zaregistrirovat-neskolko-realizats
 https://dejanstojanovic.net/aspnet/2018/december/registering-multiple-implementations-of-the-same-interface-in-aspnet-core/
 
 
-
+AWS  KeyVault   https://www.youtube.com/watch?v=BGW4FnEB-CM
 
 
 
