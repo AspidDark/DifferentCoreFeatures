@@ -281,6 +281,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SecretsVault", "SecretsVaul
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aws", "Aws", "{D4CF82CE-D6F3-4AE8-B602-F0F65648934E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DIFeatures", "DIFeatures", "{C7DCA2D8-1A78-412B-A07D-2B998B9726D8}"
+	ProjectSection(SolutionItems) = preProject
+		Program.cs = Program.cs
+		Services.cs = Services.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
