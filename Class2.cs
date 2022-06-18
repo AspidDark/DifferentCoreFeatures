@@ -1,6 +1,8 @@
 ﻿using Marten;
 using Weasel.Core;
 
+//https://www.youtube.com/watch?v=lgd_HxGBa-U
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddMarten(o =>
 {
