@@ -292,6 +292,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MultipleResolve", "Multiple
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIFeatures", "DIfeatures\Multipleresolve\DIFeatures.csproj", "{990F55D3-187B-4250-A9B7-CB4986A48583}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postrges", "Postrges", "{5C4E00B3-B431-4AC2-973D-2C47CA1461DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PoatrgesAsNoSQL", "PoatrgesAsNoSQL", "{F8651E3E-9573-4279-A9B1-14EEA11EC36D}"
+	ProjectSection(SolutionItems) = preProject
+		Class2.cs = Class2.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -814,6 +821,7 @@ Global
 		{8EA163E5-4599-4C10-8336-CF30195727DA} = {C7DCA2D8-1A78-412B-A07D-2B998B9726D8}
 		{AD2AB649-AFBD-48DB-AC6A-44FA64A70251} = {C7DCA2D8-1A78-412B-A07D-2B998B9726D8}
 		{990F55D3-187B-4250-A9B7-CB4986A48583} = {AD2AB649-AFBD-48DB-AC6A-44FA64A70251}
+		{F8651E3E-9573-4279-A9B1-14EEA11EC36D} = {5C4E00B3-B431-4AC2-973D-2C47CA1461DF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1548A1F8-F841-43F3-A87E-DD2E16DA5CF1}
