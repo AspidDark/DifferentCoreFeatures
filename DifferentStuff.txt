@@ -104,6 +104,6 @@ AWS  KeyVault   https://www.youtube.com/watch?v=BGW4FnEB-CM
 https://www.youtube.com/watch?v=DdlRH3BgIvc  Chacheing and alot
 
 
-
+dotnet ef migrations script -c {context_name} -o Data/Subscriptions/Sql/{migration_name}.sql {previous_migraiton_name}
 
 

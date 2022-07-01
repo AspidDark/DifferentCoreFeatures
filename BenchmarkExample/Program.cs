@@ -9,7 +9,7 @@ namespace BenchmarkExample
         {
             Console.WriteLine("Start Benchmarks");
             BenchmarkRunner.Run<DateParserBenchmarks>();
-            Console.ReadKey(); ;
+            Console.ReadKey();
         }
     }
 }
