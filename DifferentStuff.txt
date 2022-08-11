@@ -54,7 +54,7 @@ https://www.youtube.com/watch?v=_iryZxv8Rxw&t=1488s&ab_channel=IAmTimCorey
 GraphQl https://github.com/binarythistle/S04E01---.NET-5-GraphQL-API
 
 
-
+ѕоказывать доступность  Internal  дл€ других проектов https://www.youtube.com/watch?v=6WeT-JQBI98
 
 Next____
 
