@@ -135,6 +135,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{1E63A138-45EB-4A6B-AE99-E74EB9667F3B}"
 	ProjectSection(SolutionItems) = preProject
 		AdditionalConfigFile.txt = AdditionalConfigFile.txt
+		Class3.cs = Class3.cs
 		DifferentStuff.txt = DifferentStuff.txt
 		..\..\Users\prove\Desktop\InternalVisible.png = ..\..\Users\prove\Desktop\InternalVisible.png
 		..\..\Users\aupov\Desktop\photo_2021-08-09_18-18-05.jpg = ..\..\Users\aupov\Desktop\photo_2021-08-09_18-18-05.jpg
