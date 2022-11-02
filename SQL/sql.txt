@@ -1,0 +1,161 @@
+2 Create DataBase, Rename , delete
+3. Create Table
+4. Default constraint
+5. Cascading referential integrity constraint
+6 Adding a check constraint 
+7 Identity Column in SQL    
+8 How to get the last generated identity column value
+9 Unique key constraint
+10  Select statement  
+11 Group 
+12 Joins 
+13. Advanced or intelligent joins join+where
+14 Self join  
+15 Different ways to replace NULL  
+16 Coalesce function 
+17 Union and union all () Union All объединяет 2 селекта Union объединяет 2 селекта но одинаковые строки выводит только 1
+18 Stored procedures 
+19 Stored procedures with output parameters  
+20 Stored procedure output parameters or return      () Return возвращает только 1 значение и оно int (обычно результат выполнения) 0 -OK
+21 Advantages of stored procedures    () 1 Reused Execution Plan  2 network traffic  3 поддержка   4 security  5 prevent sql Injection
+22 Built in string functions in sql  ()=> ASCII() PIC 22 
+23 LEFT, RIGHT, CHARINDEX and SUBSTRING functions in sql   ()=> Pic 23
+24 Replicate, Space, Patindex, Replace and Stuff string functions in  
+25 DateTime functions 
+26 IsDate, Day, Month, Year and DateName DateTime 
+27 DatePart, DateAdd and DateDiff functions in SQL   // takes part of date   // adds date  // diffrence of dates   
+28 Cast and Convert functions ()=>  Cast (<что именно> AS <новый тип>([<длина>])) Convert  есть наличие стилей Cast стандартная штука Ansi т.е. есть во всех БД  Convert есть не во всех sql серверах
+29 Mathematical functions  
+30 Scalar user defined functions ()=> простая функция типа sqrt или Abs возвращает 1 простое значение
+31 Inline table valued functions  ()=>   возвращает таблицу в объявлеии нет Begin и End   синтаксис-> Returns Table as    Работает быстрее чем Multy  SQL рассамтривает ее почти как View    можно апдейтить таблицу из которой берется
+32 Multi statement table valued functions   формулируется четко структура таблицы до отдачи	синтаксис-> Returns @TableName Table as (coloumns Type)   Insert into Table   SQL рассамтривает ее почти как StoredProcedure  нельзя апдейтить таблицу из которой берется
+33 Important concepts related to functions in sql server  () WITH SCHEMABINDING - не дает удалять связанные объекты 
+34 Temporary tables    ()=> # временная таблица локальная ## гобальная
+35 Indexes ()=> таблицы или wiev
+36 Clustered and nonclustered indexes ()=> clusterd немного быстрее и он в таблице только 1  nonclustered по сути отдельная таблица с данными в нужном порядке со ссылкой на нужную строку
+37 Unique and Non Unique Indexes ()=> sp_helpindex <Таблица> смотреть индексы в таблице | уникальность  это свойство индекса
+38 Advantages and disadvantages of indexes  ()=> для быстрого поиска
+39 Views  ()=>сохраненный запрос или виртуальная таблица
+40 Updatable views ()=> можно апдейтить удалять и записывать  НО нужно быть осторожным т.к если виюха представляет несколько таблиц то с обновлением могут быть траблы
+41 Indexed views   ()=> как только у wiev появляется индекс она материализуется(начинает хранить данные)
+42 View limitations ()=> нельзя передавать параметры В ней нельзя ипользовать order by только с использованием TOP не может использовать временные таблицы
+43 DML triggers  ()=> Data Manupulation Language    After trigger  после Instade of trigger  вместо  inserted   deleted
+44 After update trigger ()=> KEY WORD for  по сути insert и Delete  Select * into # TempTable from inserted
+45 Instead of insert trigger      (instad of insert)            Riseerror 
+46 Instead of update triggers  ()=> instad of trigger
+47 Instead of delete triggers  create Trigger <Имя> on <View> instad of delete
+48 Derived tables and common table expressions  ------ https://www.youtube.com/watch?v=FwcAkH8UyEA&list=PL08903FB7ACA1C2FB&index=49&ab_channel=kudvenkat
+49 CTE in sql server With
+50 Updatable common table expressions
+51 Recursive CTE
+52 Database normalization  -- First Normal Form
+53 Second normal form and third normal form
+54 Pivot   turns rows in to coloumns
+55 Error handling in sql server @@ERROR
+56  Error handling in sql Try Catch
+57 Transactions
+58 Transactions in sql server and ACID Tests
+59 Subqueries
+60 Correlated subquery
+61 Creating a large table with random data for performance testing
+62 What to choose for performance SubQuery or Joins
+63 Cursors in sql server      CURSOR FOR  @@FETCH_STATUS
+64 Replacing cursors using joins 
+65 List all tables in a sql server database using a query
+66 Writing re runnable sql server scripts 
+67 Alter database table columns without dropping table
+68 Optional parameters in sql server stored procedures
+69 Merge in SQL Server
+70 sql server concurrent transactions
+71 sql server dirty read
+72 sql server lost update
+73 Non repeatable read
+74 Phantom reads   <------------------------------------------------
+75 Snapshot isolation level   
+76 Read committed snapshot isolation
+77 Difference between snapshot isolation and read committed snapshot
+78 SQL Server deadlock
+79 SQL Server deadlock victim selection
+80 Logging deadlocks in sql server
+81 SQL Server deadlock analysis and prevention
+82 Capturing deadlocks in sql profiler<-
+83 SQL Server deadlock error handling
+84 Handling deadlocks in ado net
+85 Retry logic for deadlock exceptions
+86 How to find blocking queries in sql server
+87 SQL Server except operator
+88 Difference between except and not in
+89 Intersect operator
+90 Difference between union intersect and except
+91 Cross apply and outer apply        Like  inner Join  Outer Join 
+92 DDL Triggers
+93 Server scoped ddl
+94 sql server trigger execution order
+95 Audit table changes in sql server
+96 Logon Triggers Original_Login()
+97 Select into   Insert into      backup
+98 Difference between where and having  having can be used with aggregates   where not
+99 Table valued parameters
+100 Send datatable as parameter to stored procedure
+101 Grouping Sets in SQL Server
+102 Rollup
+103 Cube
+104 Difference between cube and rollup   Cube=>all combunation posible combinations Rollup= Иерархия комибинаций
+105 Grouping function 
+106 GROUPING ID function
+107 Debugging sql server stored procedures
+108 Over clause 
+109 Row Number function     delete copies
+110 Rank and Dense Rank      Rank skips if rianking tie
+111 Difference between rank dense rank and row number
+112 Calculate running total
+113 NTILE function
+114 Lead and Lag functions 
+115 FIRST VALUE
+116 Window functions
+117 Difference between rows and range  Range-- duplicates as single entity   rows separates them(norml count)
+118 LAST VALUE function      last value in  ordered  query   
+119 UNPIVOT   opreator  turns coloumns in to rows
+120 Reverse PIVOT
+121 Choose function  \\\ swich case resplacer
+122 IIF function  the same as '?'
+123 TRY PARSE function  \\  can be used to convert to numeric types DateTime int
+124 TRY CONVERT function  \\any general type convertion
+125 EOMONTH function   \\ returns last day of month
+126 DATEFROMPARTS function
+127 Difference between DateTime and SmallDateTime  accuracy + 8 byte or 4 byte
+128 DateTime2FromParts function https://www.youtube.com/watch?v=gPqF8GmvXSo&list=PL08903FB7ACA1C2FB&index=128
+129 Difference between DateTime and DateTime2  \\DateTime2 is better at any case   lower bytes  higher accuracy  dateTime use for compatibility 
+130 Offset fetch next (Paging) Pagination
+131 Identifying object dependencies
+132 sys dm sql referencing entities   \\get all referencing entities
+133 sp depends      \\ not always shows dependencies correctly   if table droped a n then created again
+134 Sequence object  \\increment or decrement value every call
+135 Difference between sequence and identity  \\pic
+136 Guid      //advantage uniq   //disadvantage  Large => slower index
+137 How to check GUID is null or empty // is NULL
+138 Dynamic SQL  //sql query from string in runtime   sp_executesql
+139 mplement search web page using ASP NET and Stored Procedure
+140 Implement search web page using ASP NET and Dynamic SQL
+141 Prevent sql injection with dynamic sql
+142 Dynamic SQL in Stored Procedure
+143 Sql server query plan cache
+144 exec vs sp executesql in sql server
+145 Dynamic sql table name
+146 Quotename function //raps string in '' or "" or []   default=> []   ---to prevent injection
+147 Dynamic SQL vs Stored Procedure//  procedures are better at any case   only better case of dynamic sql is flexibility
+148 Dynamic sql output parameter   //Output  key word
+149 Temp tables in dynamic sql
+https://www.youtube.com/watch?v=4lXpR6GdHo0&list=PL08903FB7ACA1C2FB&index=127
+
+
+Docker Compose 
+
+Interlocked =>
+
+Уровни изоляции=>БД  74 
+
+
+
+Sp_helptext
+

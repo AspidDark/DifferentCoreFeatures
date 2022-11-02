@@ -1,0 +1,9 @@
+create Procedure spGetTopTransations
+as 
+Begin
+select top (10) * from TransactionDatas
+order by TransactionDatas.RequestRecievedOn  desc
+End
+
+exec spGetTopTransations
+
