@@ -385,6 +385,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Debugging", "Debugging", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DebugAttributes", "Debugging\DebugAttributes.csproj", "{9F7853B2-3F67-41F4-B493-DED2E5EAB696}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OptionsSetup", "OptionsSetup", "{E39050F3-2588-471C-8659-F983F4888670}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OptionsPatternCityApi", "OptionsSetup\OptionsPatternCityApi\OptionsPatternCityApi.csproj", "{2815EA26-50DA-466D-994B-D79EA54AAC5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -840,6 +844,12 @@ Global
 		{9F7853B2-3F67-41F4-B493-DED2E5EAB696}.Docker|Any CPU.Build.0 = Debug|Any CPU
 		{9F7853B2-3F67-41F4-B493-DED2E5EAB696}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F7853B2-3F67-41F4-B493-DED2E5EAB696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2815EA26-50DA-466D-994B-D79EA54AAC5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2815EA26-50DA-466D-994B-D79EA54AAC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2815EA26-50DA-466D-994B-D79EA54AAC5A}.Docker|Any CPU.ActiveCfg = Debug|Any CPU
+		{2815EA26-50DA-466D-994B-D79EA54AAC5A}.Docker|Any CPU.Build.0 = Debug|Any CPU
+		{2815EA26-50DA-466D-994B-D79EA54AAC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2815EA26-50DA-466D-994B-D79EA54AAC5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -923,6 +933,7 @@ Global
 		{3F9048B9-EDD4-4E89-ABE6-AB02BCEFEDC6} = {C7DCA2D8-1A78-412B-A07D-2B998B9726D8}
 		{5ABFB1E6-4997-4690-B1BE-AF52299C97A6} = {3F9048B9-EDD4-4E89-ABE6-AB02BCEFEDC6}
 		{9F7853B2-3F67-41F4-B493-DED2E5EAB696} = {AF07FCF8-550D-4AAC-9BA0-37479D28A40F}
+		{2815EA26-50DA-466D-994B-D79EA54AAC5A} = {E39050F3-2588-471C-8659-F983F4888670}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1548A1F8-F841-43F3-A87E-DD2E16DA5CF1}
