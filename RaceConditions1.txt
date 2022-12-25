@@ -1,0 +1,3 @@
+https://www.youtube.com/watch?v=M1N9huHatLo
+
+//Redis Distributed Lock

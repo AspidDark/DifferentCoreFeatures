@@ -213,6 +213,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Humanizer", "Humanizer", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Thread", "Thread", "{A6C27F4A-AF6F-4518-88CC-752EA5B8795D}"
 	ProjectSection(SolutionItems) = preProject
+		RaceConditions1.txt = RaceConditions1.txt
 		When All extension.PNG = When All extension.PNG
 	EndProjectSection
 EndProject
