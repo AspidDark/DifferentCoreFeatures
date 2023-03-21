@@ -412,6 +412,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OptionsValidator", "Options
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuntimeFluentValidation", "OptionsValidator\RuntimeFluentValidation\RuntimeFluentValidation.csproj", "{CFC0A509-6227-44EF-B4A1-350541785C5F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "React", "React", "{616E576F-FA45-44ED-A7D8-75B41DD8EFE8}"
+	ProjectSection(SolutionItems) = preProject
+		ReactTsfromCoreTemplate.txt = ReactTsfromCoreTemplate.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
