@@ -1,6 +1,6 @@
 npm add typescript @types/node @types/react @types/react-dom @types/react-router-dom
 
-
+npm install @mui/material @emotion/react @emotion/styled
 https://stackoverflow.com/questions/48967495/adding-typescript-to-existing-create-react-app-app
 
 tsc --init
