@@ -27,4 +27,6 @@ namespace EFDataAccess
         private static object Private(this object obj, string privateField) => obj?.GetType().GetField(privateField, BindingFlags.Instance | BindingFlags.NonPublic)?.GetValue(obj);
         private static T Private<T>(this object obj, string privateField) => (T)obj?.GetType().GetField(privateField, BindingFlags.Instance | BindingFlags.NonPublic)?.GetValue(obj);
     }
+
+    // query.SingleorDefault(x=> EF.Property<int>(x, "Id")==id) !!! Можно искать по Пропертям которые не видны и которых нет в явной модели!
 }
