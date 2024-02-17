@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolverineDemo", "WolverineDemo\WolverineDemo.csproj", "{EC26BF9F-78B2-4A3A-972E-26E4AB01DAD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingContracts", "MessagingContracts\MessagingContracts.csproj", "{D20DA064-BB05-4AC6-B6EB-E60177D83286}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Api", "Movies.Api\Movies.Api.csproj", "{4F00375A-880D-4DC0-BE5D-0625AB676333}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesConsumer", "MoviesConsumer\MoviesConsumer.csproj", "{1D38A788-83EC-4820-BC27-9291BD7C43C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC26BF9F-78B2-4A3A-972E-26E4AB01DAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC26BF9F-78B2-4A3A-972E-26E4AB01DAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC26BF9F-78B2-4A3A-972E-26E4AB01DAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC26BF9F-78B2-4A3A-972E-26E4AB01DAD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D20DA064-BB05-4AC6-B6EB-E60177D83286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D20DA064-BB05-4AC6-B6EB-E60177D83286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D20DA064-BB05-4AC6-B6EB-E60177D83286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D20DA064-BB05-4AC6-B6EB-E60177D83286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F00375A-880D-4DC0-BE5D-0625AB676333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F00375A-880D-4DC0-BE5D-0625AB676333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F00375A-880D-4DC0-BE5D-0625AB676333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F00375A-880D-4DC0-BE5D-0625AB676333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D38A788-83EC-4820-BC27-9291BD7C43C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D38A788-83EC-4820-BC27-9291BD7C43C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D38A788-83EC-4820-BC27-9291BD7C43C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D38A788-83EC-4820-BC27-9291BD7C43C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
