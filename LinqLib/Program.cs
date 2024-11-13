@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 using LinqLib.Additional;
@@ -442,6 +443,69 @@ namespace LinqLib
             //Movie defaultValue = movies.First();
             //Movie movie = movies.FirstOrDefault(m => m.Cast.Includes("Matt Eland"), defaultValue);
 
+
+            string lorem = """
+                Lorem Ipsum is simply dummy text of the printing 
+                and typesetting industry. Lorem Ipsum has been the 
+                industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and 
+                scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the
+                leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets 
+                containing Lorem Ipsum passages, and more recently with desktop publishing 
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                """;
+
+            //Слово и сколько раз появляется
+            IEnumerable<KeyValuePair<string, int>> mostFrq = lorem.
+                Split([',', ' ', '.'], StringSplitOptions.RemoveEmptyEntries)
+                .Select(x => x.ToLowerInvariant())
+                .CountBy(x => x);
+
+                    //максимальное вхождение
+                    KeyValuePair<string, int> mostFrq2 = lorem.
+            Split([',', ' ', '.'], StringSplitOptions.RemoveEmptyEntries)
+            .Select(x => x.ToLowerInvariant())
+            .CountBy(x => x).MaxBy(x => x.Value);
+
+
+
+            //Аггрегация по
+            (string id, int score)[] data =
+            [
+                ("0", 42),
+                ("1", 5),
+                ("2", 6),
+                ("1", 10),
+                ("0", 25),
+                
+                ];
+
+            var mehodd = data.AggregateBy(seed: 0, func: (totalScore, curr) => totalScore += curr.score, keySelector: entry => entry.id);
+
+
+            //старый способ
+            IEnumerable<string> lines = File.ReadAllLines("filepath");
+
+            foreach ((string line, int index) in lines.Select((line, index)=>(line, index)))
+            { 
+            
+            }
+
+
+
+            //новый способ
+            IEnumerable<string> lines2 = File.ReadAllLines("filepath");
+
+            foreach ((int index, string line) in lines.Index())
+            {
+
+            }
+
+
+
+            var tmp = lines.Index();
         }
 
 
