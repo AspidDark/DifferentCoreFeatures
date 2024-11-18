@@ -494,7 +494,6 @@ namespace LinqLib
             }
 
 
-
             //новый способ
             IEnumerable<string> lines2 = File.ReadAllLines("filepath");
 
@@ -506,6 +505,12 @@ namespace LinqLib
 
 
             var tmp = lines.Index();
+
+
+
+
+            //CountBy
+            var tmp3Count = data.CountBy(x => x.id);
         }
 
 
