@@ -1,0 +1,11 @@
+Jwt
+
+dotnet user-jwts create
+
+dotnet user-jwts create --role "admin"
+
+dotnet user-jwts create --role "admin" -n payer1
+
+dotnet user-jwts create --role "player" -n player1 --claim "subscription-gold"
+
+dotnet user-jwts print f09e4395
