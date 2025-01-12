@@ -21,6 +21,10 @@ namespace DPSService
         private readonly CreateReportJob _createReport;
         private readonly IServiceScopeFactory _scopeFactory;
         private readonly ScheduleOptions _scheduleOptions;
+        //отсюда тащтить скоуп
+        private readonly IServiseScopeFactory _serviseScopeFactory;
+        //Доступ к лайфтайму всей приложухи
+        private readonly IHostApplicationLifetime _hostApplicationLifetime;
 
         public IConfiguration Configuration { get; }
         public Worker(IConfiguration configuration, ILogger<Worker> logger, CreateReportJob createReport, IServiceScopeFactory scopeFactory)
