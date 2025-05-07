@@ -1,0 +1,6 @@
+@Postgres.Caching_HostAddress = http://localhost:5124
+
+GET {{Postgres.Caching_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
