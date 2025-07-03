@@ -476,6 +476,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reflection", "Reflection", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postgres.Caching", "cacheing\Postgres.Caching\Postgres.Caching\Postgres.Caching.csproj", "{BB36A42F-C073-4975-8B23-0007A3214177}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Channels", "Channels", "{384CCACF-0CB7-4303-8F1E-C740770860F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Channels", "Channels\Channels.csproj", "{9B7D850D-9E69-4744-B5C4-01DC9FC98D27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1081,6 +1085,12 @@ Global
 		{BB36A42F-C073-4975-8B23-0007A3214177}.Docker|Any CPU.Build.0 = Debug|Any CPU
 		{BB36A42F-C073-4975-8B23-0007A3214177}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB36A42F-C073-4975-8B23-0007A3214177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B7D850D-9E69-4744-B5C4-01DC9FC98D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7D850D-9E69-4744-B5C4-01DC9FC98D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7D850D-9E69-4744-B5C4-01DC9FC98D27}.Docker|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7D850D-9E69-4744-B5C4-01DC9FC98D27}.Docker|Any CPU.Build.0 = Debug|Any CPU
+		{9B7D850D-9E69-4744-B5C4-01DC9FC98D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7D850D-9E69-4744-B5C4-01DC9FC98D27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1193,6 +1203,7 @@ Global
 		{906011EF-CC38-475A-9E19-84136C27D6EA} = {24BBF00B-7ACA-4A36-9A7D-85F24A9A88F4}
 		{F44CEFAA-6C20-4C38-BD3B-3AD25D01881E} = {24BBF00B-7ACA-4A36-9A7D-85F24A9A88F4}
 		{BB36A42F-C073-4975-8B23-0007A3214177} = {279406F0-0662-45FE-9E34-2351FCBEDD49}
+		{9B7D850D-9E69-4744-B5C4-01DC9FC98D27} = {384CCACF-0CB7-4303-8F1E-C740770860F3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1548A1F8-F841-43F3-A87E-DD2E16DA5CF1}
