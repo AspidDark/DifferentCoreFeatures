@@ -145,6 +145,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{1E63A138
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{DF73CAD2-6826-4D96-BC96-DDB7DBDD9F8B}"
+	ProjectSection(SolutionItems) = preProject
+		GrpcLogging.cs = GrpcLogging.cs
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogingWithSerilog", "Logging\LogingWithSerilog\LogingWithSerilog.csproj", "{5639737F-A2AC-4764-944C-8DA29E482663}"
 EndProject
