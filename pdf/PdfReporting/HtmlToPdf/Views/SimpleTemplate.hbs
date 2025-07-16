@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+    <title>Simple Invoice</title>
+</head>
+<body>
+    <h1>Invoice #{{Number}}</h1>
+
+    <p>Date: {{formatDate IssuedDate}}</p>
+
+    <h2>From:</h2>
+    <p>{{SellerAddress.CompanyName}}</p>
+    <p>{{SellerAddress.Email}}</p>
+
+    <h2>To:</h2>
+    <p>{{CustomerAddress.CompanyName}}</p>
+    <p>{{CustomerAddress.Email}}</p>
+
+    <h2>Items:</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+        {{#each LineItems}}
+        <tr>
+            <td>{{Name}}</td>
+            <td>{{formatCurrency Price}}</td>
+        </tr>
+        {{/each}}
+    </table>
+
+    <p><strong>Total: {{formatCurrency Total}}</strong></p>
+</body>
+</html>

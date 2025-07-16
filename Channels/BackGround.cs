@@ -16,13 +16,13 @@ public class BackGroundSingle(ChannelReader<ChannelData> reader) : BackgroundSer
 }
 
 //2 publishers  1 reader
-public class BackGroundSingleWriter(Channel<ChannelData> writer) : BackgroundService
+public class BackGroundSingleWriter(ChannelWriter<ChannelData> writer) : BackgroundService
 {
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         while (true) 
         {
-            await writer.Writer.WriteAsync(new() { ChannelName = Guid.NewGuid().ToString(), StringData = "BackGround" });
+            await writer.WriteAsync(new() { ChannelName = Guid.NewGuid().ToString(), StringData = "BackGround" });
             await Task.Delay(500);
         }
     }
