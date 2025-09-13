@@ -139,7 +139,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{1E63A138
 		DifferentStuff.txt = DifferentStuff.txt
 		..\..\Users\prove\Desktop\InternalVisible.png = ..\..\Users\prove\Desktop\InternalVisible.png
 		LockAsync.cs = LockAsync.cs
+		LONQMatrialize.txt = LONQMatrialize.txt
 		..\..\Users\aupov\Desktop\photo_2021-08-09_18-18-05.jpg = ..\..\Users\aupov\Desktop\photo_2021-08-09_18-18-05.jpg
+		StructsOnhep.txt = StructsOnhep.txt
 		SwaggerSetupXMLDocker.txt = SwaggerSetupXMLDocker.txt
 		..\..\Users\prove\Desktop\Снимок экрана 2022-08-11 144709.png = ..\..\Users\prove\Desktop\Снимок экрана 2022-08-11 144709.png
 	EndProjectSection

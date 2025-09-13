@@ -1,0 +1,47 @@
+Does materialize (executes SQL and fetches data)
+
+Enumeration: foreach, await foreach (query.AsAsyncEnumerable())
+
+Converters/collectors: ToList(), ToListAsync(), ToArray(), ToArrayAsync(), ToDictionary(), ToDictionaryAsync(), ToLookup(), ToLookupAsync(), ToHashSet()
+
+Single-element/positional: First(), FirstOrDefault(), Single(), SingleOrDefault(), Last(), LastOrDefault(), ElementAt(), ElementAtOrDefault() and all Async variants
+
+Aggregates/quantifiers/scalars: Any(), All(), Count(), LongCount(), Sum(), Min(), Max(), Average(), Contains() (on the query), plus Async variants
+
+Equality check that forces full enumeration: SequenceEqual() (when used on two queries)
+
+EF-specific loaders: Find(), FindAsync(), .Entry(...).Reference(...).Load(), .Entry(...).Collection(...).Load(), and their Async forms
+
+Note: ExecuteUpdate() / ExecuteDelete() hit the DB immediately (not materialization of rows, but still immediate execution).
+
+
+
+
+Does not materialize (deferred; builds/reshapes the query)
+
+Filtering/projection: Where, Select, SelectMany
+
+Sorting: OrderBy, OrderByDescending, ThenBy, ThenByDescending
+
+Set/sequence ops: Distinct, Union, Concat, Intersect, Except
+
+Paging/shaping: Skip, Take, DefaultIfEmpty
+
+Joins/grouping: Join, GroupJoin, GroupBy (translated when possible; still deferred)
+
+Type ops: OfType, Cast (translation support varies)
+
+EF query-shaping hints: Include, ThenInclude, AsNoTracking, AsNoTrackingWithIdentityResolution, AsTracking, AsSplitQuery, AsSingleQuery, IgnoreAutoIncludes
+
+Provider switches / composing helpers: AsQueryable, AsEnumerable, FromSqlRaw, FromSqlInterpolated, TagWith
+
+
+
+
+Small notes
+
+AsEnumerable()/AsQueryable() themselves don’t execute; they just switch the provider for the subsequent operators. Execution still happens only when you enumerate or call a terminal/materializing operator.
+
+GroupBy is deferred; EF Core translates common patterns with aggregates. If a shape isn’t translatable, EF throws when the query is executed (not at GroupBy call time).
+
+Every method above has Async variants where noted; they’re still materializing/non-materializing in the same way—just asynchronous.

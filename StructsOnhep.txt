@@ -1,0 +1,107 @@
+﻿The Real Rule
+
+Classes are always reference types → their instances live on the managed heap.
+
+Structs are value types → they live wherever they are declared/contained.
+
+Structs can be on the stack, on the heap, or even inside other objects — it depends on context.
+
+Scenarios Where Structs Live
+1. Struct on the Stack (classic case)
+
+If you declare a struct as a local variable in a method and it does not escape:
+
+void Foo()
+{
+    Point p = new Point(1, 2); // value type
+    Console.WriteLine(p.X);    // p is on the stack
+}
+
+
+p is stored inline on the stack frame for this method.
+
+When the method returns, that memory is gone.
+
+No heap allocation, no GC involvement.
+
+
+
+2. Struct Inside a Class (on the Heap)
+
+If a struct is a field of a class, and that class is allocated on the heap, the struct is stored inside that heap object:
+
+class Container
+{
+    public Point P;
+}
+
+var c = new Container();
+c.P = new Point(1, 2);
+
+
+The Container object is on the heap.
+
+The Point struct is part of the object’s memory layout — also on the heap (but inline, no extra object).
+
+3. Struct Inside an Array (on the Heap) 
+
+Arrays in .NET are always heap objects.
+If the array element type is a struct, each element is stored inline in the array object:
+
+Point[] points = new Point[10];
+
+
+points is a single heap allocation.
+
+Each Point is laid out sequentially inside the array memory.
+
+4. Boxed Struct (on the Heap) 
+
+If a struct is boxed, a new object is allocated on the heap, and the struct’s value is copied into it:
+
+int x = 42;
+object o = x; // BOXING, allocates on the heap
+
+
+o now points to a heap object containing a copy of x.
+
+Boxing can happen implicitly when:
+
+You cast a struct to object or an interface it implements.
+
+You store a struct in a non-generic ArrayList, Hashtable, etc.
+
+You use reflection APIs that return object.
+
+5. Captured Local Variable in a Lambda / async 
+
+When you capture a struct in a closure (lambda or async method), it is lifted to the heap:
+
+void Foo()
+{
+    Point p = new Point(1, 2);
+    Action a = () => Console.WriteLine(p.X); // p is captured
+    a();
+}
+
+
+The compiler generates a hidden class to store p.
+
+That hidden class is allocated on the heap.
+
+p now lives on the heap as part of that closure object.
+
+6. Pinned Structs (Special Case)
+
+In unsafe or interop scenarios, a struct may be "pinned" in memory so the GC won’t move it.
+It’s still on the heap, but in a fixed address:
+
+fixed (Point* ptr = &points[0])
+{
+    // points array is pinned
+}
+
+7. Ref Structs (Stack-Only Enforcement)
+
+C# has ref struct (like Span<T>) which must stay on the stack and cannot be boxed, stored in heap objects, or captured by lambdas.
+This is a compiler-enforced guarantee to avoid heap allocation.
