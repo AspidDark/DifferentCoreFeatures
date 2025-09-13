@@ -138,6 +138,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{1E63A138
 		Class3.cs = Class3.cs
 		DifferentStuff.txt = DifferentStuff.txt
 		..\..\Users\prove\Desktop\InternalVisible.png = ..\..\Users\prove\Desktop\InternalVisible.png
+		JwtGenerateDevelopment.txt = JwtGenerateDevelopment.txt
 		LockAsync.cs = LockAsync.cs
 		LONQMatrialize.txt = LONQMatrialize.txt
 		..\..\Users\aupov\Desktop\photo_2021-08-09_18-18-05.jpg = ..\..\Users\aupov\Desktop\photo_2021-08-09_18-18-05.jpg

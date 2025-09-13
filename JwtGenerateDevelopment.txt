@@ -1,0 +1,22 @@
+dotnet user-jwts create \
+  --name "DevToken" \
+  --audience "https://localhost:5001" \
+  --issuer "https://localhost:5001" \
+  --scope "read write" \
+  --role "Admin" \
+  --claim "customClaim=myValue" \
+  --expires "1h"
+Explanation of the Flags:
+--name – Friendly name for the token (optional, helps you manage tokens later).
+
+--audience – Must match the audience your app validates (JwtBearerOptions.Audience).
+
+--issuer – Must match the expected issuer (JwtBearerOptions.Authority).
+
+--scope – Adds scopes for APIs that use scope-based authorization.
+
+--role – Adds roles (useful for [Authorize(Roles="Admin")]).
+
+--claim – Adds custom claims (you can repeat this flag multiple times for multiple claims).
+
+--expires – Expiration, supports formats like 30m, 1h, 1d, etc.
